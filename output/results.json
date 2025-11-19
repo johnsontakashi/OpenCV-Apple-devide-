@@ -1,0 +1,1683 @@
+{
+  "pipeline_config": {
+    "log_level": "INFO",
+    "output_dir": "output",
+    "color_extensions": [
+      ".jpg",
+      ".png",
+      ".jpeg",
+      ".bmp"
+    ],
+    "depth_extensions": [
+      ".png",
+      ".tiff",
+      ".tif",
+      ".exr"
+    ],
+    "camera": {
+      "camera_fx": 525.0,
+      "camera_fy": 525.0,
+      "camera_cx": 320.0,
+      "camera_cy": 240.0,
+      "depth_scale": 1000.0
+    },
+    "preprocessing": {
+      "depth_scale": 1000.0,
+      "max_depth": 2.0,
+      "bilateral_d": 9,
+      "bilateral_sigma_color": 75,
+      "bilateral_sigma_space": 75
+    },
+    "segmentation": {
+      "segmentation_method": "classical",
+      "hsv_lower": [
+        0,
+        50,
+        50
+      ],
+      "hsv_upper": [
+        25,
+        255,
+        255
+      ],
+      "depth_fg_threshold": 0.3,
+      "depth_bg_threshold": 1.5,
+      "min_fruit_area": 1000,
+      "morph_kernel_size": 5,
+      "opening_iterations": 2,
+      "closing_iterations": 3
+    },
+    "pointcloud": {
+      "normal_radius": 0.03,
+      "normal_max_nn": 30,
+      "outlier_nb_neighbors": 20,
+      "outlier_std_ratio": 2.0
+    },
+    "planarity": {
+      "label_diameter_mm": 20.0,
+      "label_diameter_pixels": 40,
+      "window_scale_factor": 1.2,
+      "planarity_threshold": 0.01
+    },
+    "candidate_selection": {
+      "label_diameter_pixels": 40,
+      "min_valid_depth_fraction": 0.95,
+      "max_rms_threshold": 0.01,
+      "max_candidates_per_fruit": 5,
+      "min_edge_distance": 20,
+      "weight_planarity": 0.5,
+      "weight_depth_validity": 0.25,
+      "weight_color_uniformity": 0.15,
+      "weight_edge_distance": 0.1
+    },
+    "constraints": {
+      "stem_depth_spike_threshold": 0.02,
+      "stem_region_radius": 15,
+      "tray_boundary_margin": 20,
+      "tray_ransac_threshold": 0.01,
+      "tray_min_samples": 100,
+      "contact_gradient_threshold": 0.05,
+      "contact_dilation_kernel": 5
+    },
+    "visualization": {
+      "figure_size": [
+        15,
+        10
+      ],
+      "visualization_dpi": 150
+    },
+    "advanced": {
+      "enable_multiprocessing": false,
+      "num_processes": 4,
+      "max_image_size": [
+        1024,
+        768
+      ],
+      "min_planarity_score": 0.1,
+      "min_color_uniformity": 0.1,
+      "save_intermediate_results": false,
+      "enable_3d_visualization": false
+    }
+  },
+  "processing_summary": {
+    "total_images": 1,
+    "successful_images": 1,
+    "total_fruits": 26,
+    "total_candidates": 17
+  },
+  "results": [
+    {
+      "image_name": "0002",
+      "processing_time": 11142.360515594482,
+      "color_path": "uploaded_images/0002.png",
+      "depth_path": "uploaded_images/0002_depth.png",
+      "num_fruits": 26,
+      "fruits": [
+        {
+          "fruit_id": 1,
+          "properties": {
+            "instance_id": 1,
+            "area": 1552.0,
+            "centroid": [
+              118.06636597938144,
+              541.8762886597938
+            ],
+            "bbox": [
+              89,
+              522,
+              146,
+              560
+            ],
+            "circularity": 0.6027329775293657,
+            "mean_color": [
+              125.2667525773196,
+              108.15592783505154,
+              41.12822164948454
+            ],
+            "std_color": [
+              13.78731030827697,
+              12.901097448521005,
+              11.180094490515327
+            ],
+            "mean_depth": 0.4312383830547333,
+            "std_depth": 0.0012892779195681214,
+            "depth_range": [
+              0.42899999022483826,
+              0.4359999895095825
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.28732492806184806,
+            "std_planarity": 0.23144665414098556,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 61.14690721649485
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 2,
+          "properties": {
+            "instance_id": 2,
+            "area": 9251.0,
+            "centroid": [
+              245.2241919792455,
+              819.0959896227434
+            ],
+            "bbox": [
+              195,
+              765,
+              297,
+              879
+            ],
+            "circularity": 0.8783316124058506,
+            "mean_color": [
+              155.93470976110692,
+              100.33153172629986,
+              54.57712679710301
+            ],
+            "std_color": [
+              23.298211874361005,
+              19.51344766400204,
+              21.348039928309657
+            ],
+            "mean_depth": 0.45120933651924133,
+            "std_depth": 0.017936209216713905,
+            "depth_range": [
+              0.4309999942779541,
+              0.5040000081062317
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.20161800691938925,
+            "std_planarity": 0.26869900605037705,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 78.66176629553561
+          },
+          "candidates": [
+            {
+              "center_y": 250,
+              "center_x": 845,
+              "pixel_location": [
+                250,
+                845
+              ],
+              "depth": 0.4350000023841858,
+              "total_score": 0.9204448677677047,
+              "planarity_score": 0.9893903512346767,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.961266650613229,
+              "edge_distance_score": 0.31559693813323975,
+              "edge_distance_pixels": 31.559694290161133,
+              "discontinuity_score": 0.03449445998850529,
+              "rms_error": 0.0005936748930253088,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.4350000023841858,
+                0.00828571431338787,
+                0.4350000023841858
+              ]
+            },
+            {
+              "center_y": 215,
+              "center_x": 820,
+              "pixel_location": [
+                215,
+                820
+              ],
+              "depth": 0.44600000977516174,
+              "total_score": 0.9061663103368782,
+              "planarity_score": 0.988800023642991,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9384419919900316,
+              "edge_distance_score": 0.20999999344348907,
+              "edge_distance_pixels": 21.0,
+              "discontinuity_score": 0.15594947544095522,
+              "rms_error": 0.00158408482093364,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.42476189136505127,
+                -0.021238096058368683,
+                0.44600000977516174
+              ]
+            },
+            {
+              "center_y": 275,
+              "center_x": 810,
+              "pixel_location": [
+                275,
+                810
+              ],
+              "depth": 0.43700000643730164,
+              "total_score": 0.8480055808804902,
+              "planarity_score": 0.8716993759452325,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9397266198151384,
+              "edge_distance_score": 0.21196898818016052,
+              "edge_distance_pixels": 21.1968994140625,
+              "discontinuity_score": 0.04628098076981385,
+              "rms_error": 0.001164795714430511,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.4078666865825653,
+                0.029133332893252373,
+                0.43700000643730164
+              ]
+            }
+          ],
+          "num_candidates": 3
+        },
+        {
+          "fruit_id": 3,
+          "properties": {
+            "instance_id": 3,
+            "area": 8883.0,
+            "centroid": [
+              250.66948103118315,
+              996.3645164921761
+            ],
+            "bbox": [
+              201,
+              945,
+              301,
+              1054
+            ],
+            "circularity": 0.8726077686382112,
+            "mean_color": [
+              147.88539907688843,
+              114.07565011820331,
+              74.31532140042778
+            ],
+            "std_color": [
+              33.75007196219883,
+              29.99353219918752,
+              24.51825563237448
+            ],
+            "mean_depth": 0.4592834711074829,
+            "std_depth": 0.024256519973278046,
+            "depth_range": [
+              0.4350000023841858,
+              0.5080000162124634
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2893990514563502,
+            "std_planarity": 0.2799920301770454,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 63.23314195654621
+          },
+          "candidates": [
+            {
+              "center_y": 246,
+              "center_x": 1030,
+              "pixel_location": [
+                246,
+                1030
+              ],
+              "depth": 0.44600000977516174,
+              "total_score": 0.910092339345209,
+              "planarity_score": 1.0,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9166775920549513,
+              "edge_distance_score": 0.22590699791908264,
+              "edge_distance_pixels": 22.590700149536133,
+              "discontinuity_score": 0.18357972880996837,
+              "rms_error": 0.001774545875377953,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.6031619310379028,
+                0.0050971428863704205,
+                0.44600000977516174
+              ]
+            },
+            {
+              "center_y": 221,
+              "center_x": 995,
+              "pixel_location": [
+                221,
+                995
+              ],
+              "depth": 0.4620000123977661,
+              "total_score": 0.9049438415713265,
+              "planarity_score": 0.9892016382359544,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9289534849098093,
+              "edge_distance_score": 0.20999999344348907,
+              "edge_distance_pixels": 21.0,
+              "discontinuity_score": 0.1577771584449051,
+              "rms_error": 0.0014471103204414248,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.593999981880188,
+                -0.016720000654459,
+                0.4620000123977661
+              ]
+            },
+            {
+              "center_y": 276,
+              "center_x": 980,
+              "pixel_location": [
+                276,
+                980
+              ],
+              "depth": 0.44200000166893005,
+              "total_score": 0.8339626237107566,
+              "planarity_score": 0.85151770292885,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.8987331450945177,
+              "edge_distance_score": 0.23393799364566803,
+              "edge_distance_pixels": 23.393798828125,
+              "discontinuity_score": 0.03500409572130262,
+              "rms_error": 0.0007623634883202612,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.555657148361206,
+                0.030308570712804794,
+                0.44200000166893005
+              ]
+            }
+          ],
+          "num_candidates": 3
+        },
+        {
+          "fruit_id": 4,
+          "properties": {
+            "instance_id": 4,
+            "area": 3918.0,
+            "centroid": [
+              280.01123021949974,
+              395.8940786115365
+            ],
+            "bbox": [
+              253,
+              338,
+              313,
+              449
+            ],
+            "circularity": 0.5500636028302665,
+            "mean_color": [
+              141.74349157733536,
+              98.9395099540582,
+              87.71745788667688
+            ],
+            "std_color": [
+              34.04538307146348,
+              24.782765545031705,
+              34.04013870195785
+            ],
+            "mean_depth": 0.44263601303100586,
+            "std_depth": 0.03169351816177368,
+            "depth_range": [
+              0.4129999876022339,
+              0.49799999594688416
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.24191124278623619,
+            "std_planarity": 0.2964643677187521,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 72.12863705972435
+          },
+          "candidates": [
+            {
+              "center_y": 273,
+              "center_x": 383,
+              "pixel_location": [
+                273,
+                383
+              ],
+              "depth": 0.4399999976158142,
+              "total_score": 0.9082380897197241,
+              "planarity_score": 0.998695246635124,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9247271295069919,
+              "edge_distance_score": 0.2018139660358429,
+              "edge_distance_pixels": 20.181396484375,
+              "discontinuity_score": 0.18949599038142736,
+              "rms_error": 0.002395288785919547,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.052799999713897705,
+                0.027657141909003258,
+                0.4399999976158142
+              ]
+            }
+          ],
+          "num_candidates": 1
+        },
+        {
+          "fruit_id": 5,
+          "properties": {
+            "instance_id": 5,
+            "area": 4182.0,
+            "centroid": [
+              295.6544715447154,
+              561.9019607843137
+            ],
+            "bbox": [
+              266,
+              510,
+              329,
+              622
+            ],
+            "circularity": 0.4312691676643813,
+            "mean_color": [
+              154.83955045432808,
+              116.23122907699666,
+              91.17862266857962
+            ],
+            "std_color": [
+              25.257276550258094,
+              23.38898910704942,
+              27.520956620216975
+            ],
+            "mean_depth": 0.4480241537094116,
+            "std_depth": 0.018046477809548378,
+            "depth_range": [
+              0.42399999499320984,
+              0.4790000021457672
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2117385173662835,
+            "std_planarity": 0.26622903063295916,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 77.42706838833094
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 6,
+          "properties": {
+            "instance_id": 6,
+            "area": 906.0,
+            "centroid": [
+              323.5662251655629,
+              942.0827814569536
+            ],
+            "bbox": [
+              305,
+              924,
+              345,
+              957
+            ],
+            "circularity": 0.5181945233877218,
+            "mean_color": [
+              166.96688741721854,
+              148.85320088300222,
+              79.78918322295806
+            ],
+            "std_color": [
+              20.4846630461219,
+              17.603289494086788,
+              12.631067116727246
+            ],
+            "mean_depth": 0.43404632806777954,
+            "std_depth": 0.008279609493911266,
+            "depth_range": [
+              0.42800000309944153,
+              0.47600001096725464
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.3411913168863823,
+            "std_planarity": 0.29695502817781605,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 55.51876379690949
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 7,
+          "properties": {
+            "instance_id": 7,
+            "area": 7802.0,
+            "centroid": [
+              330.45270443476034,
+              375.93578569597537
+            ],
+            "bbox": [
+              274,
+              315,
+              374,
+              449
+            ],
+            "circularity": 0.6117485256368304,
+            "mean_color": [
+              122.91374006664958,
+              74.58920789541143,
+              67.8120994616765
+            ],
+            "std_color": [
+              36.02246398704047,
+              23.85818675046056,
+              27.361514317628885
+            ],
+            "mean_depth": 0.4535762667655945,
+            "std_depth": 0.03477733954787254,
+            "depth_range": [
+              0.4129999876022339,
+              0.49900001287460327
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.18151290848222895,
+            "std_planarity": 0.2507550246681906,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 81.74826967444245
+          },
+          "candidates": [
+            {
+              "center_y": 344,
+              "center_x": 405,
+              "pixel_location": [
+                344,
+                405
+              ],
+              "depth": 0.42100000381469727,
+              "total_score": 0.9114070863244027,
+              "planarity_score": 0.9817087559194044,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9572454179801891,
+              "edge_distance_score": 0.2696589529514313,
+              "edge_distance_pixels": 26.96589469909668,
+              "discontinuity_score": 0.0672868046726546,
+              "rms_error": 0.0006911131786182523,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.06816190481185913,
+                0.08339809626340866,
+                0.42100000381469727
+              ]
+            },
+            {
+              "center_y": 329,
+              "center_x": 355,
+              "pixel_location": [
+                329,
+                355
+              ],
+              "depth": 0.48100000619888306,
+              "total_score": 0.8993441207857958,
+              "planarity_score": 0.9600059808635172,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9318762284055702,
+              "edge_distance_score": 0.2955969572067261,
+              "edge_distance_pixels": 29.559694290161133,
+              "discontinuity_score": 0.18999639350091108,
+              "rms_error": 0.002904983004555106,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.032066669315099716,
+                0.08154095709323883,
+                0.48100000619888306
+              ]
+            }
+          ],
+          "num_candidates": 2
+        },
+        {
+          "fruit_id": 8,
+          "properties": {
+            "instance_id": 8,
+            "area": 4491.0,
+            "centroid": [
+              347.49454464484523,
+              565.3910042306836
+            ],
+            "bbox": [
+              314,
+              512,
+              382,
+              619
+            ],
+            "circularity": 0.5301000642292795,
+            "mean_color": [
+              137.8027165441995,
+              98.92295702516144,
+              69.65887330215988
+            ],
+            "std_color": [
+              32.522849501082234,
+              24.02691535704108,
+              25.32355484862285
+            ],
+            "mean_depth": 0.4458300769329071,
+            "std_depth": 0.017179014161229134,
+            "depth_range": [
+              0.4230000078678131,
+              0.47999998927116394
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.22338290780628303,
+            "std_planarity": 0.28138643278422054,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 77.02070808283233
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 9,
+          "properties": {
+            "instance_id": 9,
+            "area": 1718.0,
+            "centroid": [
+              366.4173457508731,
+              843.6990686845169
+            ],
+            "bbox": [
+              349,
+              783,
+              386,
+              883
+            ],
+            "circularity": 0.3552753778229753,
+            "mean_color": [
+              161.51920838183935,
+              126.94703143189756,
+              77.91792782305006
+            ],
+            "std_color": [
+              22.741305520768613,
+              20.31125925534926,
+              19.709051179182
+            ],
+            "mean_depth": 0.437817245721817,
+            "std_depth": 0.010138063691556454,
+            "depth_range": [
+              0.421999990940094,
+              0.47200000286102295
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.21977047934359456,
+            "std_planarity": 0.260930994015429,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 78.23050058207218
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 10,
+          "properties": {
+            "instance_id": 10,
+            "area": 1107.0,
+            "centroid": [
+              401.42457091237577,
+              868.286359530262
+            ],
+            "bbox": [
+              387,
+              845,
+              426,
+              889
+            ],
+            "circularity": 0.6910964605613449,
+            "mean_color": [
+              156.14363143631437,
+              124.6576332429991,
+              82.63685636856368
+            ],
+            "std_color": [
+              25.460388891979427,
+              24.003787020532776,
+              14.871931944615586
+            ],
+            "mean_depth": 0.4363008141517639,
+            "std_depth": 0.021198097616434097,
+            "depth_range": [
+              0.41999998688697815,
+              0.48100000619888306
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2249919717606801,
+            "std_planarity": 0.2774867521955186,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 76.96476964769647
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 11,
+          "properties": {
+            "instance_id": 11,
+            "area": 808.0,
+            "centroid": [
+              409.6967821782178,
+              993.565594059406
+            ],
+            "bbox": [
+              392,
+              967,
+              424,
+              1012
+            ],
+            "circularity": 0.5012487888327032,
+            "mean_color": [
+              162.70420792079207,
+              145.48267326732673,
+              98.89480198019803
+            ],
+            "std_color": [
+              8.791472134597397,
+              12.115867869854817,
+              13.74331782583005
+            ],
+            "mean_depth": 0.4298489987850189,
+            "std_depth": 0.0017067057779058814,
+            "depth_range": [
+              0.42800000309944153,
+              0.4350000023841858
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.19445727841500157,
+            "std_planarity": 0.2886228113494641,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 80.94059405940595
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 12,
+          "properties": {
+            "instance_id": 12,
+            "area": 548.0,
+            "centroid": [
+              412.18978102189783,
+              1020.0638686131387
+            ],
+            "bbox": [
+              395,
+              1011,
+              428,
+              1032
+            ],
+            "circularity": 0.7690533202394113,
+            "mean_color": [
+              167.0602189781022,
+              148.17153284671534,
+              92.46532846715328
+            ],
+            "std_color": [
+              20.52428740966848,
+              20.801278908272067,
+              11.648935702213272
+            ],
+            "mean_depth": 0.4322938024997711,
+            "std_depth": 0.00209260662086308,
+            "depth_range": [
+              0.42899999022483826,
+              0.4359999895095825
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.3347684916181334,
+            "std_planarity": 0.31533469587319,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 60.94890510948905
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 13,
+          "properties": {
+            "instance_id": 13,
+            "area": 1869.0,
+            "centroid": [
+              432.91492776886037,
+              776.8769395398609
+            ],
+            "bbox": [
+              391,
+              757,
+              468,
+              797
+            ],
+            "circularity": 0.5754552700549849,
+            "mean_color": [
+              153.9036918138042,
+              124.2182985553772,
+              72.76136971642589
+            ],
+            "std_color": [
+              30.11393261733465,
+              27.647004179887976,
+              22.259253261245632
+            ],
+            "mean_depth": 0.4476591646671295,
+            "std_depth": 0.012164730578660965,
+            "depth_range": [
+              0.4300000071525574,
+              0.48100000619888306
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.22320541082047257,
+            "std_planarity": 0.2742266772422487,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 73.35473515248796
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 14,
+          "properties": {
+            "instance_id": 14,
+            "area": 2363.0,
+            "centroid": [
+              449.28903935674987,
+              825.9246720270842
+            ],
+            "bbox": [
+              424,
+              799,
+              474,
+              858
+            ],
+            "circularity": 0.6745533755532619,
+            "mean_color": [
+              152.3491324587389,
+              129.87558188743122,
+              78.4820143884892
+            ],
+            "std_color": [
+              24.90558528661194,
+              26.95275266943928,
+              20.678523838071065
+            ],
+            "mean_depth": 0.44252052903175354,
+            "std_depth": 0.019918132573366165,
+            "depth_range": [
+              0.42100000381469727,
+              0.4830000102519989
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.25815693672593754,
+            "std_planarity": 0.2828935392772858,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 73.5928903935675
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 15,
+          "properties": {
+            "instance_id": 15,
+            "area": 485.0,
+            "centroid": [
+              446.5360824742268,
+              866.160824742268
+            ],
+            "bbox": [
+              428,
+              859,
+              466,
+              875
+            ],
+            "circularity": 0.6426425253094469,
+            "mean_color": [
+              116.69690721649485,
+              100.96701030927835,
+              56.90721649484536
+            ],
+            "std_color": [
+              36.470251833312126,
+              38.01647695312818,
+              30.1380611756523
+            ],
+            "mean_depth": 0.4442845284938812,
+            "std_depth": 0.008704631589353085,
+            "depth_range": [
+              0.42500001192092896,
+              0.4569999873638153
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.27181046844229395,
+            "std_planarity": 0.3066994725758518,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 63.298969072164944
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 16,
+          "properties": {
+            "instance_id": 16,
+            "area": 2313.0,
+            "centroid": [
+              470.9390402075227,
+              757.4738434932988
+            ],
+            "bbox": [
+              439,
+              730,
+              507,
+              783
+            ],
+            "circularity": 0.763318644847313,
+            "mean_color": [
+              160.5689580631215,
+              133.83225248594897,
+              67.46692607003891
+            ],
+            "std_color": [
+              20.145807149217006,
+              17.852604397453113,
+              16.190896972257555
+            ],
+            "mean_depth": 0.4300406277179718,
+            "std_depth": 0.004007674753665924,
+            "depth_range": [
+              0.42399999499320984,
+              0.4429999887943268
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.3448825166812097,
+            "std_planarity": 0.30400970116873854,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 54.5179420665802
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 17,
+          "properties": {
+            "instance_id": 17,
+            "area": 3341.0,
+            "centroid": [
+              467.17809039209817,
+              920.2205926369351
+            ],
+            "bbox": [
+              438,
+              876,
+              504,
+              965
+            ],
+            "circularity": 0.6007956264011707,
+            "mean_color": [
+              159.40137683328345,
+              123.80005986231667,
+              80.14606405267884
+            ],
+            "std_color": [
+              25.76493765704246,
+              21.992886390315416,
+              16.937750005817975
+            ],
+            "mean_depth": 0.437824010848999,
+            "std_depth": 0.0142029644921422,
+            "depth_range": [
+              0.4230000078678131,
+              0.47699999809265137
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2352085831603156,
+            "std_planarity": 0.24815335244162628,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 79.07812032325651
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 18,
+          "properties": {
+            "instance_id": 18,
+            "area": 4071.0,
+            "centroid": [
+              543.5234586096782,
+              644.4964382215671
+            ],
+            "bbox": [
+              517,
+              592,
+              568,
+              693
+            ],
+            "circularity": 0.6436462362530517,
+            "mean_color": [
+              155.3836895111766,
+              108.44436256448047,
+              80.31884057971014
+            ],
+            "std_color": [
+              24.909596687211078,
+              26.44541821310335,
+              20.43493034052222
+            ],
+            "mean_depth": 0.4275527000427246,
+            "std_depth": 0.011359432712197304,
+            "depth_range": [
+              0.41600000858306885,
+              0.4749999940395355
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.1531810823141395,
+            "std_planarity": 0.24452880166054097,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 87.76713338246131
+          },
+          "candidates": [
+            {
+              "center_y": 547,
+              "center_x": 667,
+              "pixel_location": [
+                547,
+                667
+              ],
+              "depth": 0.42100000381469727,
+              "total_score": 0.9066483767372513,
+              "planarity_score": 0.9955551805007419,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9192419180195625,
+              "edge_distance_score": 0.20984497666358948,
+              "edge_distance_pixels": 20.9844970703125,
+              "discontinuity_score": 0.025112444283938416,
+              "rms_error": 0.0006291610770858824,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.2782609760761261,
+                0.24618475139141083,
+                0.42100000381469727
+              ]
+            }
+          ],
+          "num_candidates": 1
+        },
+        {
+          "fruit_id": 19,
+          "properties": {
+            "instance_id": 19,
+            "area": 1550.0,
+            "centroid": [
+              559.0329032258064,
+              771.9735483870968
+            ],
+            "bbox": [
+              529,
+              748,
+              578,
+              798
+            ],
+            "circularity": 0.680444778048039,
+            "mean_color": [
+              165.26580645161292,
+              102.32903225806452,
+              87.40709677419355
+            ],
+            "std_color": [
+              32.08211729540452,
+              22.501214211658912,
+              23.440138196436738
+            ],
+            "mean_depth": 0.441956102848053,
+            "std_depth": 0.013811894692480564,
+            "depth_range": [
+              0.42500001192092896,
+              0.4779999852180481
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.21312951659154875,
+            "std_planarity": 0.2727744829639702,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 75.35483870967742
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 20,
+          "properties": {
+            "instance_id": 20,
+            "area": 4915.0,
+            "centroid": [
+              565.6270600203459,
+              485.2386571719227
+            ],
+            "bbox": [
+              511,
+              445,
+              620,
+              518
+            ],
+            "circularity": 0.6167668287141755,
+            "mean_color": [
+              132.57517802644963,
+              89.28036622583927,
+              64.70152594099694
+            ],
+            "std_color": [
+              38.69436010467584,
+              40.940921272698944,
+              26.191955691415767
+            ],
+            "mean_depth": 0.4251120984554291,
+            "std_depth": 0.022145099937915802,
+            "depth_range": [
+              0.4129999876022339,
+              0.4970000088214874
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2245011410890201,
+            "std_planarity": 0.27151664283908794,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 78.2706002034588
+          },
+          "candidates": [
+            {
+              "center_y": 571,
+              "center_x": 485,
+              "pixel_location": [
+                571,
+                485
+              ],
+              "depth": 0.414000004529953,
+              "total_score": 0.8885881799486498,
+              "planarity_score": 0.954368756093913,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9093586768610955,
+              "edge_distance_score": 0.25,
+              "edge_distance_pixels": 25.0,
+              "discontinuity_score": 0.016613873746916766,
+              "rms_error": 0.0005589118227362633,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.13011428713798523,
+                0.2610171437263489,
+                0.414000004529953
+              ]
+            }
+          ],
+          "num_candidates": 1
+        },
+        {
+          "fruit_id": 21,
+          "properties": {
+            "instance_id": 21,
+            "area": 9012.0,
+            "centroid": [
+              586.3634043497559,
+              994.5117620949844
+            ],
+            "bbox": [
+              529,
+              928,
+              636,
+              1051
+            ],
+            "circularity": 0.5597751330696827,
+            "mean_color": [
+              151.80736795383933,
+              97.05492676431425,
+              88.47159343098092
+            ],
+            "std_color": [
+              31.196241093488435,
+              31.329817394502694,
+              24.271196089198973
+            ],
+            "mean_depth": 0.4529472589492798,
+            "std_depth": 0.02930036000907421,
+            "depth_range": [
+              0.42500001192092896,
+              0.5059999823570251
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2869163327078683,
+            "std_planarity": 0.28984956463143396,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 61.118508655126504
+          },
+          "candidates": [
+            {
+              "center_y": 609,
+              "center_x": 1018,
+              "pixel_location": [
+                609,
+                1018
+              ],
+              "depth": 0.4519999921321869,
+              "total_score": 0.9148541190867591,
+              "planarity_score": 1.0,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9312548272443928,
+              "edge_distance_score": 0.25165894627571106,
+              "edge_distance_pixels": 25.165895462036133,
+              "discontinuity_score": 0.19663433803726485,
+              "rms_error": 0.0017942081904038787,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.6009447574615479,
+                0.3176914155483246,
+                0.4519999921321869
+              ]
+            },
+            {
+              "center_y": 604,
+              "center_x": 978,
+              "pixel_location": [
+                604,
+                978
+              ],
+              "depth": 0.4359999895095825,
+              "total_score": 0.8882999956574019,
+              "planarity_score": 0.9586579620611786,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9066801220707873,
+              "edge_distance_score": 0.22968995571136475,
+              "edge_distance_pixels": 22.968996047973633,
+              "discontinuity_score": 0.17287501124530008,
+              "rms_error": 0.002323802560567856,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.5464533567428589,
+                0.3022933304309845,
+                0.4359999895095825
+              ]
+            },
+            {
+              "center_y": 564,
+              "center_x": 1013,
+              "pixel_location": [
+                564,
+                1013
+              ],
+              "depth": 0.42800000309944153,
+              "total_score": 0.8591301475765212,
+              "planarity_score": 0.8859599249107084,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9436885939907249,
+              "edge_distance_score": 0.24596895277500153,
+              "edge_distance_pixels": 24.596895217895508,
+              "discontinuity_score": 0.02612201304355791,
+              "rms_error": 0.0006456954288296402,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.5649600028991699,
+                0.2641371488571167,
+                0.42800000309944153
+              ]
+            }
+          ],
+          "num_candidates": 3
+        },
+        {
+          "fruit_id": 22,
+          "properties": {
+            "instance_id": 22,
+            "area": 3848.0,
+            "centroid": [
+              586.7702702702703,
+              433.26195426195426
+            ],
+            "bbox": [
+              541,
+              406,
+              630,
+              469
+            ],
+            "circularity": 0.6056898727542106,
+            "mean_color": [
+              141.7765072765073,
+              81.40280665280665,
+              73.29547817047818
+            ],
+            "std_color": [
+              36.87996696967689,
+              37.34889045075268,
+              27.248247770821585
+            ],
+            "mean_depth": 0.4760090708732605,
+            "std_depth": 0.02166149951517582,
+            "depth_range": [
+              0.4180000126361847,
+              0.4959999918937683
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.22088275235275084,
+            "std_planarity": 0.26868962628691917,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 75.72765072765073
+          },
+          "candidates": [
+            {
+              "center_y": 596,
+              "center_x": 431,
+              "pixel_location": [
+                596,
+                431
+              ],
+              "depth": 0.4819999933242798,
+              "total_score": 0.8962869619526836,
+              "planarity_score": 0.968528956929223,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9229819163027685,
+              "edge_distance_score": 0.2357519567012787,
+              "edge_distance_pixels": 23.5751953125,
+              "discontinuity_score": 0.10305622327445527,
+              "rms_error": 0.0014619603753089905,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.10190857201814651,
+                0.32684189081192017,
+                0.4819999933242798
+              ]
+            }
+          ],
+          "num_candidates": 1
+        },
+        {
+          "fruit_id": 23,
+          "properties": {
+            "instance_id": 23,
+            "area": 5311.0,
+            "centroid": [
+              598.3876859348522,
+              642.9397476934664
+            ],
+            "bbox": [
+              568,
+              594,
+              635,
+              692
+            ],
+            "circularity": 0.734984344083309,
+            "mean_color": [
+              140.98531350028244,
+              97.81698361890416,
+              71.54227075880249
+            ],
+            "std_color": [
+              36.99917013336822,
+              39.67375453286779,
+              26.323166710527865
+            ],
+            "mean_depth": 0.4569642245769501,
+            "std_depth": 0.03187139704823494,
+            "depth_range": [
+              0.4169999957084656,
+              0.4970000088214874
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.23066334282416873,
+            "std_planarity": 0.2815736470880747,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 74.35511203163246
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 24,
+          "properties": {
+            "instance_id": 24,
+            "area": 1192.0,
+            "centroid": [
+              597.2072147651006,
+              770.6451342281879
+            ],
+            "bbox": [
+              579,
+              752,
+              628,
+              798
+            ],
+            "circularity": 0.5586964802167581,
+            "mean_color": [
+              143.625,
+              74.13926174496645,
+              68.04697986577182
+            ],
+            "std_color": [
+              31.585738421703795,
+              20.946698145850327,
+              20.203108130362306
+            ],
+            "mean_depth": 0.4676778316497803,
+            "std_depth": 0.023828882724046707,
+            "depth_range": [
+              0.4259999990463257,
+              0.4970000088214874
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.26075521701153126,
+            "std_planarity": 0.28006273085206795,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 69.12751677852349
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 25,
+          "properties": {
+            "instance_id": 25,
+            "area": 147.0,
+            "centroid": [
+              609.6122448979592,
+              784.7551020408164
+            ],
+            "bbox": [
+              591,
+              783,
+              629,
+              788
+            ],
+            "circularity": 0.30440929895288815,
+            "mean_color": [
+              123.91836734693878,
+              54.10884353741496,
+              53.4421768707483
+            ],
+            "std_color": [
+              27.109129472113352,
+              14.06018610675092,
+              14.562148890024691
+            ],
+            "mean_depth": 0.4665510654449463,
+            "std_depth": 0.026964373886585236,
+            "depth_range": [
+              0.4359999895095825,
+              0.4970000088214874
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2282345714332735,
+            "std_planarity": 0.27853530485298805,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 71.42857142857143
+          },
+          "candidates": [],
+          "num_candidates": 0
+        },
+        {
+          "fruit_id": 26,
+          "properties": {
+            "instance_id": 26,
+            "area": 7958.0,
+            "centroid": [
+              583.4241015330485,
+              829.320809248555
+            ],
+            "bbox": [
+              522,
+              785,
+              640,
+              874
+            ],
+            "circularity": 0.5816782213491967,
+            "mean_color": [
+              138.91316913797436,
+              75.757476752953,
+              77.15569238502137
+            ],
+            "std_color": [
+              41.325893574767285,
+              32.176809402879385,
+              30.45144144608119
+            ],
+            "mean_depth": 0.4425322711467743,
+            "std_depth": 0.030070137232542038,
+            "depth_range": [
+              0.41600000858306885,
+              0.49900001287460327
+            ]
+          },
+          "planarity_statistics": {
+            "mean_planarity": 0.2885697749711362,
+            "std_planarity": 0.2772052327941986,
+            "min_planarity": 0.0,
+            "max_planarity": 1.0,
+            "flat_percentage": 63.546117114852976
+          },
+          "candidates": [
+            {
+              "center_y": 612,
+              "center_x": 820,
+              "pixel_location": [
+                612,
+                820
+              ],
+              "depth": 0.4390000104904175,
+              "total_score": 0.9164994386136408,
+              "planarity_score": 1.0,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9299962527552413,
+              "edge_distance_score": 0.27000001072883606,
+              "edge_distance_pixels": 27.0,
+              "discontinuity_score": 0.1849619470576363,
+              "rms_error": 0.0019384000916033983,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.4180952310562134,
+                0.31106284260749817,
+                0.4390000104904175
+              ]
+            },
+            {
+              "center_y": 552,
+              "center_x": 835,
+              "pixel_location": [
+                552,
+                835
+              ],
+              "depth": 0.42100000381469727,
+              "total_score": 0.8775796334419627,
+              "planarity_score": 0.9250469720593207,
+              "depth_validity_score": 1.0,
+              "color_uniformity_score": 0.9445809994197042,
+              "edge_distance_score": 0.23368996381759644,
+              "edge_distance_pixels": 23.368995666503906,
+              "discontinuity_score": 0.02635432019912789,
+              "rms_error": 0.0004992182366549969,
+              "valid": true,
+              "rejection_reason": null,
+              "world_coordinates": [
+                0.41298094391822815,
+                0.2501942813396454,
+                0.42100000381469727
+              ]
+            }
+          ],
+          "num_candidates": 2
+        }
+      ],
+      "visualization_path": "output/visualizations/0002_analysis.png",
+      "individual_visualizations": [
+        "output/visualizations/0002_fruit_1.png",
+        "output/visualizations/0002_fruit_2.png",
+        "output/visualizations/0002_fruit_3.png",
+        "output/visualizations/0002_fruit_4.png",
+        "output/visualizations/0002_fruit_5.png",
+        "output/visualizations/0002_fruit_6.png",
+        "output/visualizations/0002_fruit_7.png",
+        "output/visualizations/0002_fruit_8.png",
+        "output/visualizations/0002_fruit_9.png",
+        "output/visualizations/0002_fruit_10.png",
+        "output/visualizations/0002_fruit_11.png",
+        "output/visualizations/0002_fruit_12.png",
+        "output/visualizations/0002_fruit_13.png",
+        "output/visualizations/0002_fruit_14.png",
+        "output/visualizations/0002_fruit_15.png",
+        "output/visualizations/0002_fruit_16.png",
+        "output/visualizations/0002_fruit_17.png",
+        "output/visualizations/0002_fruit_18.png",
+        "output/visualizations/0002_fruit_19.png",
+        "output/visualizations/0002_fruit_20.png",
+        "output/visualizations/0002_fruit_21.png",
+        "output/visualizations/0002_fruit_22.png",
+        "output/visualizations/0002_fruit_23.png",
+        "output/visualizations/0002_fruit_24.png",
+        "output/visualizations/0002_fruit_25.png",
+        "output/visualizations/0002_fruit_26.png"
+      ]
+    }
+  ]
+}

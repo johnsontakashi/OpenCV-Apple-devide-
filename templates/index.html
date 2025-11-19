@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🍎 Fruit Label Placement Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; }
+        h1 { text-align: center; margin-bottom: 30px; }
+        h2 { margin-top: 30px; margin-bottom: 15px; }
+        .form-group { margin: 20px 0; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #34495e; }
+        select, input, button { padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; }
+        select, input { width: 100%; max-width: 400px; }
+        button { background: #3498db; color: white; border: none; cursor: pointer; margin: 5px; }
+        button:hover { background: #2980b9; }
+        button.success { background: #27ae60; }
+        button.upload { background: #e67e22; }
+        .status-box { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .progress { width: 100%; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden; }
+        .progress-bar { height: 100%; background: #3498db; transition: width 0.3s; }
+        .log { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; height: 300px; overflow-y: scroll; font-family: monospace; font-size: 12px; }
+        .alert { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .alert-success { background: #d4edda; color: #155724; }
+        .alert-error { background: #f8d7da; color: #721c24; }
+        .alert-info { background: #d1ecf1; color: #0c5460; }
+        .alert-warning { background: #fff3cd; color: #856404; }
+        .upload-section { background: #f8f9fa; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .file-input { margin: 10px 0; }
+        .tabs { display: flex; margin-bottom: 20px; }
+        .tab { padding: 10px 20px; background: #ecf0f1; border: 1px solid #bdc3c7; cursor: pointer; }
+        .tab.active { background: #3498db; color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            const targetTab = document.getElementById(tabName);
+            if (targetTab) {
+                targetTab.classList.add('active');
+            }
+            
+            // Add active class to clicked tab (safely)
+            if (typeof event !== 'undefined' && event && event.target) {
+                event.target.classList.add('active');
+            }
+        }
+        
+        function updateStatus() {
+            fetch('/status')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('progress-bar').style.width = data.progress + '%';
+                    document.getElementById('status-message').textContent = data.message;
+                    document.getElementById('log-content').textContent = data.log.join('\n');
+                    document.getElementById('log-content').scrollTop = document.getElementById('log-content').scrollHeight;
+                    
+                    const runButton = document.getElementById('run-button');
+                    if (data.running) {
+                        runButton.disabled = true;
+                        runButton.textContent = '🔄 Running...';
+                    } else {
+                        runButton.disabled = false;
+                        runButton.textContent = '🚀 Run Analysis';
+                        if (data.results) {
+                            document.getElementById('results-button').style.display = 'inline-block';
+                        }
+                    }
+                });
+        }
+        setInterval(updateStatus, 2000);
+        window.onload = function() {
+            updateStatus();
+            // Initialize first tab safely
+            const firstTab = document.querySelector('.tab');
+            const uploadTab = document.getElementById('upload-tab');
+            
+            if (firstTab) firstTab.classList.add('active');
+            if (uploadTab) uploadTab.classList.add('active');
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Fruit Label Placement Analysis</h1>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('upload-tab')">📤 Upload Images</div>
+            <div class="tab" onclick="showTab('directory-tab')">📁 Use Directory</div>
+        </div>
+        
+        <!-- Upload Images Tab -->
+        <div id="upload-tab" class="tab-content active">
+            <div class="upload-section">
+                <h2>Upload RGB-D Image Pair</h2>
+                <p><strong>Upload your color and depth images directly:</strong></p>
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <div class="file-input">
+                        <label for="color_file">Color Image (RGB):</label>
+                        <input type="file" name="color_file" id="color_file" accept=".png,.jpg,.jpeg,.bmp,.tiff,.tif" required>
+                        <small>Supported formats: PNG, JPG, JPEG, BMP, TIFF</small>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="depth_file">Depth Image:</label>
+                        <input type="file" name="depth_file" id="depth_file" accept=".png,.tiff,.tif" required>
+                        <small>Supported formats: PNG, TIFF (16-bit recommended)</small>
+                    </div>
+                    
+                    <button type="submit" class="upload">📤 Upload & Analyze</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Directory Tab -->
+        <div id="directory-tab" class="tab-content">
+            <form method="POST" action="/run_analysis">
+                <div class="form-group">
+                    <label for="input_dir">Select Input Directory:</label>
+                    <select name="input_dir" required>
+                        <option value="">-- Select Directory --</option>
+                        {% for dir in directories %}
+                            <option value="{{ dir }}">{{ dir }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" id="run-button">🚀 Run Analysis</button>
+                    <button type="submit" formaction="/create_test_data" class="success">📊 Create Test Data</button>
+                    <button type="button" id="results-button" onclick="location.href='/results'" style="display: none;">📁 View Results</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="status-box">
+            <h3>Processing Status</h3>
+            <div id="status-message">Ready</div>
+            <div class="progress">
+                <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Processing Log:</label>
+            <div id="log-content" class="log"></div>
+        </div>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; font-size: 12px;">
+            <h4>Instructions:</h4>
+            <ol>
+                <li><strong>Upload Method:</strong> Select "Upload Images" tab and choose your color + depth image files</li>
+                <li><strong>Directory Method:</strong> Select "Use Directory" tab and choose a folder with RGB-D pairs</li>
+                <li><strong>Test Data:</strong> Click "Create Test Data" to generate synthetic fruit images</li>
+                <li><strong>View Results:</strong> After analysis, click "View Results" for visualizations</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
