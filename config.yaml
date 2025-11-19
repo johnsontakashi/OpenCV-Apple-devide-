@@ -1,0 +1,112 @@
+# Fruit Label Placement Analysis Configuration
+# This file contains all parameters for the fruit labeling pipeline
+
+# Global Settings
+log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+output_dir: "output"
+
+# Input/Output File Settings
+color_extensions: [".jpg", ".png", ".jpeg", ".bmp"]
+depth_extensions: [".png", ".tiff", ".tif", ".exr"]
+
+# Camera Intrinsic Parameters
+# Adjust these based on your RGB-D camera
+camera:
+  camera_fx: 525.0      # Focal length X (pixels)
+  camera_fy: 525.0      # Focal length Y (pixels)  
+  camera_cx: 320.0      # Principal point X (pixels)
+  camera_cy: 240.0      # Principal point Y (pixels)
+  depth_scale: 1000.0   # Depth scale (raw depth units per meter)
+
+# Image Preprocessing Parameters
+preprocessing:
+  depth_scale: 1000.0           # Convert raw depth to meters
+  max_depth: 2.0                # Maximum valid depth (meters)
+  bilateral_d: 9                # Bilateral filter diameter
+  bilateral_sigma_color: 75     # Bilateral filter sigma color
+  bilateral_sigma_space: 75     # Bilateral filter sigma space
+
+# Fruit Segmentation Parameters
+segmentation:
+  segmentation_method: "classical"  # "classical" or "maskrcnn"
+  
+  # HSV color thresholds for red/orange fruits (apples, tomatoes)
+  hsv_lower: [0, 50, 50]        # Lower HSV bound
+  hsv_upper: [25, 255, 255]     # Upper HSV bound
+  
+  # Depth-based segmentation
+  depth_fg_threshold: 0.3       # Minimum depth for foreground (meters)
+  depth_bg_threshold: 1.5       # Maximum depth for foreground (meters)
+  
+  # Instance separation
+  min_fruit_area: 1000          # Minimum fruit area (pixels)
+  
+  # Morphological operations
+  morph_kernel_size: 5          # Kernel size for morphological ops
+  opening_iterations: 2         # Opening iterations
+  closing_iterations: 3         # Closing iterations
+
+# Point Cloud Processing Parameters
+pointcloud:
+  normal_radius: 0.03           # Radius for normal estimation (meters)
+  normal_max_nn: 30            # Max neighbors for normal estimation
+  outlier_nb_neighbors: 20     # Statistical outlier removal neighbors
+  outlier_std_ratio: 2.0       # Statistical outlier std ratio
+
+# Surface Planarity Analysis Parameters
+planarity:
+  label_diameter_mm: 20.0       # Physical label diameter (millimeters)
+  label_diameter_pixels: 40     # Label diameter in pixels (approximate)
+  window_scale_factor: 1.2      # Scale factor for analysis window
+  planarity_threshold: 0.01     # RMS error threshold for planarity
+
+# Candidate Selection Parameters
+candidate_selection:
+  label_diameter_pixels: 40            # Label diameter (pixels)
+  min_valid_depth_fraction: 0.95      # Minimum valid depth coverage
+  max_rms_threshold: 0.01              # Maximum RMS fitting error
+  max_candidates_per_fruit: 5          # Maximum candidates per fruit
+  min_edge_distance: 20                # Minimum distance from fruit edge
+  
+  # Scoring weights (must sum to 1.0)
+  weight_planarity: 0.5               # Weight for planarity score
+  weight_depth_validity: 0.25         # Weight for depth validity
+  weight_color_uniformity: 0.15       # Weight for color uniformity
+  weight_edge_distance: 0.10          # Weight for edge distance
+
+# Constraint Filtering Parameters
+constraints:
+  # Stem detection
+  stem_depth_spike_threshold: 0.02     # Depth spike threshold for stems
+  stem_region_radius: 15               # Expansion radius for stem regions
+  
+  # Tray boundary detection
+  tray_boundary_margin: 20             # Minimum distance from tray edge
+  tray_ransac_threshold: 0.01          # RANSAC threshold for tray fitting
+  tray_min_samples: 100                # Minimum samples for tray detection
+  
+  # Contact area detection
+  contact_gradient_threshold: 0.05     # Depth gradient threshold
+  contact_dilation_kernel: 5           # Dilation kernel for contact areas
+
+# Visualization Parameters
+visualization:
+  figure_size: [15, 10]         # Matplotlib figure size
+  visualization_dpi: 150        # Output resolution (DPI)
+
+# Advanced Parameters (for fine-tuning)
+advanced:
+  # Parallel processing
+  enable_multiprocessing: false  # Enable parallel processing (experimental)
+  num_processes: 4               # Number of processes for parallel execution
+  
+  # Memory optimization
+  max_image_size: [1024, 768]   # Maximum image size for processing
+  
+  # Quality thresholds
+  min_planarity_score: 0.1      # Minimum planarity score to consider
+  min_color_uniformity: 0.1     # Minimum color uniformity score
+  
+  # Debugging
+  save_intermediate_results: false  # Save intermediate processing steps
+  enable_3d_visualization: false    # Enable 3D point cloud visualization

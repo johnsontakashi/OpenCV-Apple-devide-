@@ -1,0 +1,1417 @@
+2025-11-18 15:19:13,387 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 15:19:13,387 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 15:19:13,387 - __main__ - INFO - Starting pipeline execution on directory: test_data
+2025-11-18 15:19:13,387 - __main__ - INFO - Scanning for image pairs in: test_data
+2025-11-18 15:19:13,387 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 15:19:13,387 - __main__ - INFO - Processing pair 1/1
+2025-11-18 15:19:13,387 - __main__ - INFO - Processing image pair: test_fruits
+2025-11-18 15:19:13,387 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 15:19:13,387 - preprocess - INFO - Preprocessing image pair: test_data/test_fruits.jpg, test_data/test_fruits_depth.png
+2025-11-18 15:19:13,392 - preprocess - INFO - Preprocessing complete. Image size: (480, 640)
+2025-11-18 15:19:13,392 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 15:19:13,392 - segmentation - INFO - Running classical segmentation
+2025-11-18 15:19:13,402 - segmentation - INFO - Separating fruit instances
+2025-11-18 15:19:13,404 - __main__ - ERROR - Error processing test_fruits: local_maxima() got an unexpected keyword argument 'min_distance'
+2025-11-18 15:19:13,404 - __main__ - INFO - Exporting results...
+2025-11-18 15:19:13,404 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 15:19:13,405 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 15:19:13,405 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 15:19:13,405 - __main__ - WARNING - No valid candidates to export to CSV
+2025-11-18 15:19:13,405 - visualize - INFO - Creating summary statistics plot
+2025-11-18 15:19:41,304 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 15:19:41,304 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 15:19:41,304 - __main__ - INFO - Starting pipeline execution on directory: test_data
+2025-11-18 15:19:41,304 - __main__ - INFO - Scanning for image pairs in: test_data
+2025-11-18 15:19:41,304 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 15:19:41,304 - __main__ - INFO - Processing pair 1/1
+2025-11-18 15:19:41,304 - __main__ - INFO - Processing image pair: test_fruits
+2025-11-18 15:19:41,304 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 15:19:41,304 - preprocess - INFO - Preprocessing image pair: test_data/test_fruits.jpg, test_data/test_fruits_depth.png
+2025-11-18 15:19:41,309 - preprocess - INFO - Preprocessing complete. Image size: (480, 640)
+2025-11-18 15:19:41,309 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 15:19:41,310 - segmentation - INFO - Running classical segmentation
+2025-11-18 15:19:41,311 - segmentation - INFO - Separating fruit instances
+2025-11-18 15:19:41,313 - __main__ - ERROR - Error processing test_fruits: cannot import name 'peak_local_maxima' from 'skimage.feature' (/home/houseph/.local/lib/python3.10/site-packages/skimage/feature/__init__.py)
+2025-11-18 15:19:41,313 - __main__ - INFO - Exporting results...
+2025-11-18 15:19:41,313 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 15:19:41,313 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 15:19:41,313 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 15:19:41,313 - __main__ - WARNING - No valid candidates to export to CSV
+2025-11-18 15:19:41,313 - visualize - INFO - Creating summary statistics plot
+2025-11-18 15:19:41,508 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 15:19:41,574 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 15:19:41,574 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 15:19:54,849 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 15:19:54,849 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 15:19:54,849 - __main__ - INFO - Starting pipeline execution on directory: test_data
+2025-11-18 15:19:54,849 - __main__ - INFO - Scanning for image pairs in: test_data
+2025-11-18 15:19:54,849 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 15:19:54,849 - __main__ - INFO - Processing pair 1/1
+2025-11-18 15:19:54,849 - __main__ - INFO - Processing image pair: test_fruits
+2025-11-18 15:19:54,849 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 15:19:54,849 - preprocess - INFO - Preprocessing image pair: test_data/test_fruits.jpg, test_data/test_fruits_depth.png
+2025-11-18 15:19:54,854 - preprocess - INFO - Preprocessing complete. Image size: (480, 640)
+2025-11-18 15:19:54,854 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 15:19:54,854 - segmentation - INFO - Running classical segmentation
+2025-11-18 15:19:54,855 - segmentation - INFO - Separating fruit instances
+2025-11-18 15:19:54,861 - __main__ - ERROR - Error processing test_fruits: module 'skimage.morphology' has no attribute 'watershed'
+2025-11-18 15:19:54,861 - __main__ - INFO - Exporting results...
+2025-11-18 15:19:54,861 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 15:19:54,878 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 15:19:54,878 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 15:19:54,878 - __main__ - WARNING - No valid candidates to export to CSV
+2025-11-18 15:19:54,878 - visualize - INFO - Creating summary statistics plot
+2025-11-18 15:19:55,050 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 15:19:55,105 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 15:19:55,105 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 15:20:05,467 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 15:20:05,468 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 15:20:05,468 - __main__ - INFO - Starting pipeline execution on directory: test_data
+2025-11-18 15:20:05,468 - __main__ - INFO - Scanning for image pairs in: test_data
+2025-11-18 15:20:05,468 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 15:20:05,468 - __main__ - INFO - Processing pair 1/1
+2025-11-18 15:20:05,468 - __main__ - INFO - Processing image pair: test_fruits
+2025-11-18 15:20:05,468 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 15:20:05,468 - preprocess - INFO - Preprocessing image pair: test_data/test_fruits.jpg, test_data/test_fruits_depth.png
+2025-11-18 15:20:05,473 - preprocess - INFO - Preprocessing complete. Image size: (480, 640)
+2025-11-18 15:20:05,473 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 15:20:05,473 - segmentation - INFO - Running classical segmentation
+2025-11-18 15:20:05,474 - segmentation - INFO - Separating fruit instances
+2025-11-18 15:20:05,488 - segmentation - INFO - Found 3 fruit instances
+2025-11-18 15:20:05,498 - segmentation - INFO - Extracted properties for 3 instances
+2025-11-18 15:20:05,498 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 15:20:05,499 - planarity - INFO - Analyzing planarity for 11515 pixels
+2025-11-18 15:20:11,893 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:20:11,895 - planarity - INFO - Analyzing planarity for 8020 pixels
+2025-11-18 15:20:16,569 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:20:16,570 - planarity - INFO - Analyzing planarity for 9673 pixels
+2025-11-18 15:20:23,118 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:20:23,119 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 15:20:23,119 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:20:23,783 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 15:20:23,783 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:20:24,174 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 15:20:24,174 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:20:24,687 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 15:20:24,688 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 15:20:24,688 - constraints - INFO - Applying constraint filters
+2025-11-18 15:20:24,811 - constraints - INFO - Constraint filtering complete: 8 -> 8 candidates
+2025-11-18 15:20:24,812 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 15:20:24,814 - visualize - INFO - Creating comprehensive visualization for test_fruits
+2025-11-18 15:20:25,161 - visualize - INFO - Saved comprehensive visualization to output/visualizations/test_fruits_analysis.png
+2025-11-18 15:20:25,466 - __main__ - INFO - Completed processing test_fruits in 20.00s
+2025-11-18 15:20:25,466 - __main__ - INFO - Found 3 fruits with 8 valid candidates
+2025-11-18 15:20:25,466 - __main__ - INFO - Exporting results...
+2025-11-18 15:20:25,466 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 15:20:25,483 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 15:20:25,484 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 15:20:25,486 - __main__ - INFO - CSV export complete: output/results.csv (8 candidate rows)
+2025-11-18 15:20:25,486 - visualize - INFO - Creating summary statistics plot
+2025-11-18 15:20:25,703 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 15:20:25,747 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 15:20:25,747 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 15:47:49,758 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 15:47:49,758 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 15:47:49,758 - __main__ - INFO - Starting pipeline execution on directory: test_data
+2025-11-18 15:47:49,758 - __main__ - INFO - Scanning for image pairs in: test_data
+2025-11-18 15:47:49,758 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 15:47:49,758 - __main__ - INFO - Processing pair 1/1
+2025-11-18 15:47:49,758 - __main__ - INFO - Processing image pair: test_fruits
+2025-11-18 15:47:49,758 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 15:47:49,758 - preprocess - INFO - Preprocessing image pair: test_data/test_fruits.jpg, test_data/test_fruits_depth.png
+2025-11-18 15:47:49,763 - preprocess - INFO - Preprocessing complete. Image size: (480, 640)
+2025-11-18 15:47:49,763 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 15:47:49,763 - segmentation - INFO - Running classical segmentation
+2025-11-18 15:47:49,764 - segmentation - INFO - Separating fruit instances
+2025-11-18 15:47:49,781 - segmentation - INFO - Found 3 fruit instances
+2025-11-18 15:47:49,796 - segmentation - INFO - Extracted properties for 3 instances
+2025-11-18 15:47:49,796 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 15:47:49,796 - planarity - INFO - Analyzing planarity for 11515 pixels
+2025-11-18 15:47:54,130 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:47:54,131 - planarity - INFO - Analyzing planarity for 8020 pixels
+2025-11-18 15:47:57,095 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:47:57,095 - planarity - INFO - Analyzing planarity for 9673 pixels
+2025-11-18 15:48:00,724 - planarity - INFO - Planarity analysis complete
+2025-11-18 15:48:00,724 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 15:48:00,725 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:48:01,332 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 15:48:01,332 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:48:01,680 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 15:48:01,680 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 15:48:02,147 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 15:48:02,147 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 15:48:02,147 - constraints - INFO - Applying constraint filters
+2025-11-18 15:48:02,251 - constraints - INFO - Constraint filtering complete: 8 -> 8 candidates
+2025-11-18 15:48:02,251 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 15:48:02,251 - visualize - INFO - Creating comprehensive visualization for test_fruits
+2025-11-18 15:48:02,583 - visualize - INFO - Saved comprehensive visualization to output/visualizations/test_fruits_analysis.png
+2025-11-18 15:48:02,867 - __main__ - INFO - Completed processing test_fruits in 13.11s
+2025-11-18 15:48:02,867 - __main__ - INFO - Found 3 fruits with 8 valid candidates
+2025-11-18 15:48:02,867 - __main__ - INFO - Exporting results...
+2025-11-18 15:48:02,867 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 15:48:02,867 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 15:48:02,868 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 15:48:02,869 - __main__ - INFO - CSV export complete: output/results.csv (8 candidate rows)
+2025-11-18 15:48:02,869 - visualize - INFO - Creating summary statistics plot
+2025-11-18 15:48:03,054 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 15:48:03,101 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 15:48:03,101 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 16:06:45,917 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 16:06:45,917 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 16:06:45,917 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 16:06:45,917 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 16:06:45,918 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 16:06:45,918 - __main__ - INFO - Processing pair 1/1
+2025-11-18 16:06:45,918 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 16:06:45,918 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 16:06:45,918 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 16:06:45,932 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 16:06:45,961 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 16:06:45,961 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 16:06:45,961 - segmentation - INFO - Running classical segmentation
+2025-11-18 16:06:45,964 - segmentation - INFO - Separating fruit instances
+2025-11-18 16:06:45,994 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 16:06:46,075 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 16:06:46,075 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 16:06:46,076 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 16:06:47,110 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:06:47,112 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 16:06:53,083 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:06:53,085 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 16:06:58,606 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:06:58,607 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 16:07:03,359 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:03,361 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 16:07:05,943 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:05,945 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 16:07:06,532 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:06,534 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 16:07:13,837 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:13,839 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 16:07:16,627 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:16,628 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 16:07:17,781 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:17,783 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 16:07:18,574 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:18,576 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 16:07:19,120 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:19,122 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 16:07:19,486 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:19,488 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 16:07:20,686 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:20,687 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 16:07:22,184 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:22,185 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 16:07:22,494 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:22,496 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 16:07:24,049 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:24,051 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 16:07:26,264 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:26,265 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 16:07:30,486 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:30,488 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 16:07:31,515 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:31,517 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 16:07:40,495 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:40,497 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 16:07:46,131 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:46,132 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 16:07:48,422 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:48,423 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 16:07:52,018 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:52,019 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 16:07:52,708 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:52,709 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 16:07:52,799 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:07:52,800 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 16:08:00,021 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:08:00,021 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 16:08:00,021 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:00,023 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:00,023 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:01,375 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 16:08:01,375 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:02,540 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:08:02,540 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:02,717 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:02,717 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:02,915 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:02,915 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:02,916 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:02,916 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:03,845 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:08:03,845 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,139 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,139 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,140 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,140 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,141 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,141 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,142 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,142 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,143 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,143 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,144 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,144 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,177 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,177 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,178 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,178 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,233 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,233 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,390 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,390 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,570 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,571 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,582 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:04,582 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:04,983 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:04,983 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:06,136 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:08:06,136 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:06,334 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:06,334 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:06,763 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:08:06,764 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:06,775 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:06,775 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:06,776 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:08:06,776 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:08:07,542 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:08:07,542 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 16:08:07,542 - constraints - INFO - Applying constraint filters
+2025-11-18 16:08:08,105 - constraints - INFO - Constraint filtering complete: 24 -> 17 candidates
+2025-11-18 16:08:08,118 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 16:08:08,118 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 16:08:08,733 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 16:08:10,729 - __main__ - INFO - Completed processing 0002 in 84.81s
+2025-11-18 16:08:10,730 - __main__ - INFO - Found 26 fruits with 17 valid candidates
+2025-11-18 16:08:10,730 - __main__ - INFO - Exporting results...
+2025-11-18 16:08:10,730 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 16:08:10,731 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 16:08:10,731 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 16:08:10,733 - __main__ - INFO - CSV export complete: output/results.csv (17 candidate rows)
+2025-11-18 16:08:10,733 - visualize - INFO - Creating summary statistics plot
+2025-11-18 16:08:10,904 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 16:08:11,037 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 16:08:11,037 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 16:13:20,539 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 16:13:20,539 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 16:13:20,539 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 16:13:20,539 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 16:13:20,539 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 16:13:20,539 - __main__ - INFO - Processing pair 1/1
+2025-11-18 16:13:20,539 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 16:13:20,539 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 16:13:20,539 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 16:13:20,554 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 16:13:20,582 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 16:13:20,582 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 16:13:20,582 - segmentation - INFO - Running classical segmentation
+2025-11-18 16:13:20,585 - segmentation - INFO - Separating fruit instances
+2025-11-18 16:13:20,615 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 16:13:20,692 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 16:13:20,692 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 16:13:20,694 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 16:13:21,825 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:21,827 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 16:13:27,720 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:27,722 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 16:13:33,189 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:33,191 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 16:13:37,854 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:37,856 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 16:13:40,429 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:40,430 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 16:13:41,012 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:41,014 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 16:13:49,332 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:49,334 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 16:13:52,152 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:52,153 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 16:13:53,262 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:53,264 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 16:13:54,082 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:54,084 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 16:13:54,627 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:54,628 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 16:13:54,993 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:54,994 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 16:13:56,183 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:56,185 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 16:13:57,720 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:57,721 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 16:13:58,037 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:58,038 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 16:13:59,575 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:13:59,577 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 16:14:01,765 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:01,767 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 16:14:05,887 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:05,889 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 16:14:06,921 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:06,923 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 16:14:15,359 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:15,360 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 16:14:20,973 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:20,975 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 16:14:23,231 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:23,232 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 16:14:26,798 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:26,800 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 16:14:27,498 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:27,500 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 16:14:27,593 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:27,594 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 16:14:34,662 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:14:34,662 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 16:14:34,662 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:34,664 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:34,664 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:35,975 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 16:14:35,975 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:37,119 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:14:37,119 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:37,297 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:37,297 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:37,497 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:37,497 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:37,498 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:37,498 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,419 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:14:38,420 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,715 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:38,715 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,716 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,716 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,717 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,717 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,717 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,717 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,718 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,718 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,719 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,719 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,752 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:38,752 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,753 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:38,753 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,808 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:38,808 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:38,970 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:38,970 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:39,148 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:39,148 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:39,160 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:39,160 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:39,558 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:39,558 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:40,694 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:14:40,694 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:40,890 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:40,890 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:41,309 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:14:41,309 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:41,321 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:41,321 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:41,322 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:14:41,322 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:14:42,069 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:14:42,069 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 16:14:42,069 - constraints - INFO - Applying constraint filters
+2025-11-18 16:14:42,673 - constraints - INFO - Constraint filtering complete: 24 -> 19 candidates
+2025-11-18 16:14:42,686 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 16:14:42,686 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 16:14:43,322 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 16:14:45,351 - __main__ - INFO - Completed processing 0002 in 84.81s
+2025-11-18 16:14:45,352 - __main__ - INFO - Found 26 fruits with 19 valid candidates
+2025-11-18 16:14:45,352 - __main__ - INFO - Exporting results...
+2025-11-18 16:14:45,352 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 16:14:45,374 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 16:14:45,374 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 16:14:45,376 - __main__ - INFO - CSV export complete: output/results.csv (19 candidate rows)
+2025-11-18 16:14:45,376 - visualize - INFO - Creating summary statistics plot
+2025-11-18 16:14:45,548 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 16:14:45,591 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 16:14:45,591 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 16:16:09,858 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 16:16:09,858 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 16:16:09,858 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 16:16:09,858 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 16:16:09,858 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 16:16:09,858 - __main__ - INFO - Processing pair 1/1
+2025-11-18 16:16:09,858 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 16:16:09,858 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 16:16:09,858 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 16:16:09,873 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 16:16:09,901 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 16:16:09,901 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 16:16:09,901 - segmentation - INFO - Running classical segmentation
+2025-11-18 16:16:09,904 - segmentation - INFO - Separating fruit instances
+2025-11-18 16:16:09,934 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 16:16:10,014 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 16:16:10,014 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 16:16:10,016 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 16:16:11,018 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:11,019 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 16:16:16,964 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:16,966 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 16:16:22,487 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:22,489 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 16:16:26,905 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:26,907 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 16:16:29,470 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:29,472 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 16:16:30,058 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:30,059 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 16:16:37,731 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:37,733 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 16:16:40,527 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:40,528 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 16:16:41,679 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:41,680 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 16:16:42,467 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:42,469 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 16:16:43,010 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:43,012 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 16:16:43,456 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:43,457 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 16:16:45,184 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:45,186 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 16:16:46,643 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:46,645 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 16:16:46,996 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:46,998 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 16:16:48,524 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:48,526 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 16:16:50,661 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:50,662 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 16:16:54,785 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:54,787 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 16:16:55,786 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:16:55,788 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 16:17:03,533 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:03,535 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 16:17:09,165 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:09,167 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 16:17:11,408 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:11,410 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 16:17:14,899 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:14,900 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 16:17:15,638 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:15,639 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 16:17:15,728 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:15,730 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 16:17:22,724 - planarity - INFO - Planarity analysis complete
+2025-11-18 16:17:22,724 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 16:17:22,724 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:22,725 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:22,725 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:23,998 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 16:17:23,998 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:25,115 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:17:25,116 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:25,289 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:25,289 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:25,484 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:25,484 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:25,485 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:25,485 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,381 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:17:26,381 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,670 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:26,670 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,671 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,671 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,672 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,672 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,673 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,673 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,673 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,673 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,674 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,674 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,706 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:26,707 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,708 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:26,708 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,761 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:26,761 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:26,918 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:26,918 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:27,091 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:27,091 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:27,103 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:27,103 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:27,489 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:27,489 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:28,596 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 16:17:28,596 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:28,789 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:28,789 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:29,199 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 16:17:29,199 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:29,210 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:29,210 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:29,211 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 16:17:29,211 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 16:17:29,947 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 16:17:29,947 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 16:17:29,947 - constraints - INFO - Applying constraint filters
+2025-11-18 16:17:30,509 - constraints - INFO - Constraint filtering complete: 24 -> 19 candidates
+2025-11-18 16:17:30,521 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 16:17:30,521 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 16:17:31,132 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 16:17:33,110 - __main__ - INFO - Completed processing 0002 in 83.25s
+2025-11-18 16:17:33,110 - __main__ - INFO - Found 26 fruits with 19 valid candidates
+2025-11-18 16:17:33,110 - __main__ - INFO - Exporting results...
+2025-11-18 16:17:33,110 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 16:17:33,111 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 16:17:33,111 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 16:17:33,113 - __main__ - INFO - CSV export complete: output/results.csv (19 candidate rows)
+2025-11-18 16:17:33,113 - visualize - INFO - Creating summary statistics plot
+2025-11-18 16:17:33,281 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 16:17:33,324 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 16:17:33,324 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 18:10:17,048 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 18:10:17,049 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 18:10:17,049 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 18:10:17,049 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 18:10:17,049 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 18:10:17,049 - __main__ - INFO - Processing pair 1/1
+2025-11-18 18:10:17,049 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 18:10:17,049 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 18:10:17,049 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 18:10:17,064 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 18:10:17,093 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 18:10:17,093 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 18:10:17,093 - segmentation - INFO - Running classical segmentation
+2025-11-18 18:10:17,096 - segmentation - INFO - Separating fruit instances
+2025-11-18 18:10:17,127 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 18:10:17,207 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 18:10:17,208 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 18:10:17,209 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 18:10:18,206 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:18,207 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 18:10:24,843 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:24,845 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 18:10:30,333 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:30,335 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 18:10:35,078 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:35,080 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 18:10:37,702 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:37,704 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 18:10:38,312 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:38,314 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 18:10:45,612 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:45,614 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 18:10:48,450 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:48,451 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 18:10:49,565 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:49,567 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 18:10:50,391 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:50,393 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 18:10:50,918 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:50,920 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 18:10:51,280 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:51,282 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 18:10:52,483 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:52,485 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 18:10:53,936 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:53,938 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 18:10:54,264 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:54,265 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 18:10:55,802 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:55,803 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 18:10:57,956 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:10:57,958 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 18:11:02,135 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:02,136 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 18:11:03,143 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:03,145 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 18:11:11,584 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:11,585 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 18:11:17,238 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:17,240 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 18:11:19,500 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:19,502 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 18:11:23,127 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:23,129 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 18:11:23,891 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:23,893 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 18:11:23,990 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:23,992 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 18:11:32,035 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:11:32,035 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 18:11:32,035 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:32,037 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:32,037 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:33,383 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 18:11:33,383 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:34,546 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:11:34,546 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:34,726 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:34,726 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:34,927 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:34,927 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:34,928 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:34,928 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:35,867 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:11:35,867 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,167 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:36,167 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,177 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,177 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,178 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,178 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,179 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,179 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,180 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,180 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,181 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,181 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,215 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:36,215 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,216 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,216 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,271 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:36,271 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,431 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:36,431 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,611 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:36,611 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:36,623 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:36,623 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:37,023 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:37,023 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:38,177 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:11:38,177 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:38,376 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:38,376 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:38,803 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:11:38,804 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:38,815 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:38,815 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:38,816 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:11:38,816 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:11:39,585 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:11:39,585 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 18:11:39,585 - constraints - INFO - Applying constraint filters
+2025-11-18 18:11:40,149 - constraints - INFO - Constraint filtering complete: 24 -> 19 candidates
+2025-11-18 18:11:40,162 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 18:11:40,162 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 18:11:40,776 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 18:11:42,748 - __main__ - INFO - Completed processing 0002 in 85.70s
+2025-11-18 18:11:42,748 - __main__ - INFO - Found 26 fruits with 19 valid candidates
+2025-11-18 18:11:42,748 - __main__ - INFO - Exporting results...
+2025-11-18 18:11:42,748 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 18:11:42,767 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 18:11:42,767 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 18:11:42,768 - __main__ - INFO - CSV export complete: output/results.csv (19 candidate rows)
+2025-11-18 18:11:42,768 - visualize - INFO - Creating summary statistics plot
+2025-11-18 18:11:42,935 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 18:11:42,978 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 18:11:42,978 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 18:31:14,914 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 18:31:14,914 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 18:31:14,914 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 18:31:14,914 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 18:31:14,915 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 18:31:14,915 - __main__ - INFO - Processing pair 1/1
+2025-11-18 18:31:14,915 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 18:31:14,915 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 18:31:14,915 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 18:31:14,929 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 18:31:14,958 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 18:31:14,958 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 18:31:14,958 - segmentation - INFO - Running classical segmentation
+2025-11-18 18:31:14,960 - segmentation - INFO - Separating fruit instances
+2025-11-18 18:31:14,990 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 18:31:15,069 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 18:31:15,070 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 18:31:15,071 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 18:31:16,133 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:16,134 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 18:31:22,131 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:22,133 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 18:31:27,825 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:27,826 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 18:31:32,848 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:32,849 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 18:31:35,492 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:35,493 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 18:31:36,148 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:36,149 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 18:31:43,951 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:43,953 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 18:31:46,829 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:46,831 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 18:31:47,944 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:47,945 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 18:31:48,740 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:48,741 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 18:31:49,274 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:49,275 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 18:31:49,635 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:49,637 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 18:31:50,820 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:50,822 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 18:31:52,326 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:52,328 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 18:31:52,632 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:52,633 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 18:31:54,158 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:54,160 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 18:31:56,288 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:31:56,290 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 18:32:00,269 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:00,271 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 18:32:01,250 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:01,251 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 18:32:09,212 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:09,214 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 18:32:14,911 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:14,912 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 18:32:17,222 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:17,223 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 18:32:20,815 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:20,817 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 18:32:21,516 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:21,517 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 18:32:21,610 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:21,612 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 18:32:28,672 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:32:28,672 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 18:32:28,672 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:28,674 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:28,674 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:29,932 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 18:32:29,932 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:31,052 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:32:31,053 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:31,226 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:31,226 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:31,422 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:31,422 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:31,423 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:31,423 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,318 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:32:32,319 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,615 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:32,615 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,616 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,616 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,617 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,617 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,618 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,618 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,618 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,618 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,619 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,619 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,652 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:32,652 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,653 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:32,653 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,707 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:32,708 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:32,866 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:32,867 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:33,056 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:33,056 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:33,069 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:33,069 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:33,466 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:33,467 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:34,587 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:32:34,587 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:34,779 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:34,779 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:35,188 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:32:35,188 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:35,200 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:35,200 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:35,201 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:32:35,201 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:32:35,940 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:32:35,940 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 18:32:35,940 - constraints - INFO - Applying constraint filters
+2025-11-18 18:32:36,523 - constraints - INFO - Constraint filtering complete: 24 -> 17 candidates
+2025-11-18 18:32:36,535 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 18:32:36,535 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 18:32:37,155 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 18:32:39,151 - __main__ - INFO - Completed processing 0002 in 84.24s
+2025-11-18 18:32:39,151 - __main__ - INFO - Found 26 fruits with 17 valid candidates
+2025-11-18 18:32:39,151 - __main__ - INFO - Exporting results...
+2025-11-18 18:32:39,151 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 18:32:39,161 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 18:32:39,161 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 18:32:39,163 - __main__ - INFO - CSV export complete: output/results.csv (17 candidate rows)
+2025-11-18 18:32:39,163 - visualize - INFO - Creating summary statistics plot
+2025-11-18 18:32:39,334 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 18:32:39,453 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 18:32:39,453 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 18:37:22,729 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 18:37:22,730 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 18:37:22,730 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 18:37:22,730 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 18:37:22,730 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 18:37:22,730 - __main__ - INFO - Processing pair 1/1
+2025-11-18 18:37:22,730 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 18:37:22,730 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 18:37:22,730 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 18:37:22,745 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 18:37:22,773 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 18:37:22,773 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 18:37:22,773 - segmentation - INFO - Running classical segmentation
+2025-11-18 18:37:22,776 - segmentation - INFO - Separating fruit instances
+2025-11-18 18:37:22,806 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 18:37:22,885 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 18:37:22,885 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 18:37:22,887 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 18:37:23,894 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:23,895 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 18:37:29,763 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:29,765 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 18:37:35,547 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:35,550 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 18:37:40,583 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:40,585 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 18:37:43,158 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:43,160 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 18:37:43,742 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:43,744 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 18:37:51,099 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:51,101 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 18:37:53,853 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:53,855 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 18:37:54,990 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:54,991 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 18:37:55,777 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:55,778 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 18:37:56,333 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:56,335 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 18:37:56,746 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:56,748 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 18:37:57,934 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:57,936 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 18:37:59,411 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:59,413 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 18:37:59,722 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:37:59,723 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 18:38:01,271 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:01,273 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 18:38:03,434 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:03,436 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 18:38:07,610 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:07,611 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 18:38:08,636 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:08,638 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 18:38:17,039 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:17,041 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 18:38:22,622 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:22,624 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 18:38:24,895 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:24,896 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 18:38:28,463 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:28,465 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 18:38:29,153 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:29,154 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 18:38:29,243 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:29,245 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 18:38:36,740 - planarity - INFO - Planarity analysis complete
+2025-11-18 18:38:36,740 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 18:38:36,740 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:36,742 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:36,742 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:38,064 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 18:38:38,064 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:39,189 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:38:39,189 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:39,365 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:39,365 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:39,563 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:39,563 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:39,564 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:39,564 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,477 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:38:40,477 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,770 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:40,770 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,771 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,771 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,772 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,772 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,772 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,772 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,773 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,773 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,774 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,774 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,807 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:40,807 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,808 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:40,808 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:40,862 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:40,862 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:41,021 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:41,021 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:41,199 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:41,199 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:41,211 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:41,211 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:41,605 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:41,605 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:42,738 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 18:38:42,738 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:42,933 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:42,933 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:43,347 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 18:38:43,347 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:43,359 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:43,359 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:43,360 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 18:38:43,360 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 18:38:44,117 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 18:38:44,118 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 18:38:44,118 - constraints - INFO - Applying constraint filters
+2025-11-18 18:38:44,685 - constraints - INFO - Constraint filtering complete: 24 -> 15 candidates
+2025-11-18 18:38:44,697 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 18:38:44,697 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 18:38:45,316 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 18:38:47,312 - __main__ - INFO - Completed processing 0002 in 84.58s
+2025-11-18 18:38:47,312 - __main__ - INFO - Found 26 fruits with 15 valid candidates
+2025-11-18 18:38:47,312 - __main__ - INFO - Exporting results...
+2025-11-18 18:38:47,312 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 18:38:47,316 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 18:38:47,316 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 18:38:47,318 - __main__ - INFO - CSV export complete: output/results.csv (15 candidate rows)
+2025-11-18 18:38:47,318 - visualize - INFO - Creating summary statistics plot
+2025-11-18 18:38:47,486 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 18:38:47,528 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 18:38:47,529 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 19:39:13,860 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 19:39:13,860 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 19:39:13,860 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 19:39:13,860 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 19:39:13,860 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 19:39:13,860 - __main__ - INFO - Processing pair 1/1
+2025-11-18 19:39:13,860 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 19:39:13,860 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 19:39:13,860 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 19:39:13,875 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 19:39:13,904 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 19:39:13,904 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 19:39:13,904 - segmentation - INFO - Running classical segmentation
+2025-11-18 19:39:13,906 - segmentation - INFO - Separating fruit instances
+2025-11-18 19:39:13,936 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 19:39:14,016 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 19:39:14,016 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 19:39:14,018 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 19:39:15,027 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:15,029 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 19:39:20,902 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:20,904 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 19:39:26,684 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:26,686 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 19:39:31,758 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:31,760 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 19:39:34,416 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:34,418 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 19:39:35,009 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:35,010 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 19:39:42,497 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:42,498 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 19:39:45,614 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:45,616 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 19:39:46,797 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:46,798 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 19:39:47,631 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:47,633 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 19:39:48,185 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:48,187 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 19:39:48,732 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:48,734 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 19:39:50,034 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:50,036 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 19:39:51,565 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:51,566 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 19:39:52,012 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:52,014 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 19:39:53,774 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:53,776 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 19:39:55,980 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:39:55,981 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 19:40:01,196 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:01,198 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 19:40:02,857 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:02,859 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 19:40:11,410 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:11,412 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 19:40:17,192 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:17,194 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 19:40:19,515 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:19,516 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 19:40:23,366 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:23,368 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 19:40:24,108 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:24,110 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 19:40:24,200 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:40:24,202 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 19:40:29,851 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 19:40:29,851 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 19:40:29,851 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 19:40:29,851 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 19:40:29,851 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 19:40:29,851 - __main__ - INFO - Processing pair 1/1
+2025-11-18 19:40:29,851 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 19:40:29,851 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 19:40:29,851 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 19:40:29,868 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 19:40:29,922 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 19:40:29,923 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 19:40:29,923 - segmentation - INFO - Running classical segmentation
+2025-11-18 19:40:29,927 - segmentation - INFO - Separating fruit instances
+2025-11-18 19:40:29,965 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 19:40:30,086 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 19:40:30,086 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 19:40:30,088 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 19:43:51,031 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 19:43:51,031 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 19:43:51,031 - __main__ - INFO - Starting pipeline execution on directory: uploaded_images
+2025-11-18 19:43:51,033 - __main__ - INFO - Scanning for image pairs in: uploaded_images
+2025-11-18 19:43:51,033 - __main__ - INFO - Found 1 RGB-D image pairs
+2025-11-18 19:43:51,033 - __main__ - INFO - Processing pair 1/1
+2025-11-18 19:43:51,033 - __main__ - INFO - Processing image pair: 0002
+2025-11-18 19:43:51,033 - __main__ - INFO - Step 1: Preprocessing images
+2025-11-18 19:43:51,033 - preprocess - INFO - Preprocessing image pair: uploaded_images/0002.png, uploaded_images/0002_depth.png
+2025-11-18 19:43:51,068 - preprocess - WARNING - Image size mismatch: color (720, 1280), depth (480, 848)
+2025-11-18 19:43:51,160 - preprocess - INFO - Preprocessing complete. Image size: (720, 1280)
+2025-11-18 19:43:51,160 - __main__ - INFO - Step 2: Segmenting fruits
+2025-11-18 19:43:51,160 - segmentation - INFO - Running classical segmentation
+2025-11-18 19:43:51,164 - segmentation - INFO - Separating fruit instances
+2025-11-18 19:43:51,245 - segmentation - INFO - Found 26 fruit instances
+2025-11-18 19:43:51,498 - segmentation - INFO - Extracted properties for 26 instances
+2025-11-18 19:43:51,498 - __main__ - INFO - Step 3: Analyzing surface planarity
+2025-11-18 19:43:51,501 - planarity - INFO - Analyzing planarity for 1552 pixels
+2025-11-18 19:44:07,962 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:44:07,968 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 19:46:39,354 - __main__ - INFO - Fruit Label Pipeline initialized
+2025-11-18 19:46:39,355 - __main__ - INFO - Configuration: config.yaml
+2025-11-18 19:46:39,355 - __main__ - INFO - Starting pipeline execution on directory: sample_data
+2025-11-18 19:46:39,355 - __main__ - INFO - Scanning for image pairs in: sample_data
+2025-11-18 19:46:39,355 - __main__ - INFO - No pairs found with standard naming. Trying alternative matching...
+2025-11-18 19:46:39,355 - __main__ - INFO - Matched 0 pairs by filename order
+2025-11-18 19:46:39,355 - __main__ - INFO - Found 0 RGB-D image pairs
+2025-11-18 19:46:39,355 - __main__ - ERROR - No valid RGB-D image pairs found
+2025-11-18 19:48:31,539 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:48:31,540 - planarity - INFO - Analyzing planarity for 9251 pixels
+2025-11-18 19:49:51,983 - planarity - INFO - Planarity analysis complete
+2025-11-18 19:49:51,983 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 19:49:51,983 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:51,990 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:49:51,990 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:54,343 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 19:49:54,343 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:56,915 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 19:49:56,915 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:57,460 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:49:57,460 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:58,047 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:49:58,047 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:49:58,064 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:49:58,064 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:00,537 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 19:50:00,537 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,190 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:01,190 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,192 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,192 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,193 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,193 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,194 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,195 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,196 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,196 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,197 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,197 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,289 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:01,289 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,291 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:01,291 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,437 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:01,437 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:01,845 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:01,845 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:02,411 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:02,411 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:02,439 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:02,439 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:03,773 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:03,773 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:07,360 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 19:50:07,360 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:07,869 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:07,869 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:08,881 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 19:50:08,881 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:08,899 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:08,899 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:08,925 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 19:50:08,925 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 19:50:11,041 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 19:50:11,042 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 19:50:11,042 - constraints - INFO - Applying constraint filters
+2025-11-18 19:50:15,496 - constraints - INFO - Constraint filtering complete: 24 -> 18 candidates
+2025-11-18 19:50:15,526 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 19:50:15,526 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 19:50:17,499 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 19:50:24,047 - __main__ - INFO - Completed processing 0002 in 670.19s
+2025-11-18 19:50:24,047 - __main__ - INFO - Found 26 fruits with 18 valid candidates
+2025-11-18 19:50:24,047 - __main__ - INFO - Exporting results...
+2025-11-18 19:50:24,047 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 19:50:24,066 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 19:50:24,066 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 19:50:24,068 - __main__ - INFO - CSV export complete: output/results.csv (18 candidate rows)
+2025-11-18 19:50:24,068 - visualize - INFO - Creating summary statistics plot
+2025-11-18 19:50:24,606 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 19:50:24,731 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 19:50:24,731 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 20:06:01,327 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:06:01,329 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 20:09:56,759 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:09:56,761 - planarity - INFO - Analyzing planarity for 8883 pixels
+2025-11-18 20:23:54,763 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:23:54,767 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 20:28:06,306 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:28:06,307 - planarity - INFO - Analyzing planarity for 3918 pixels
+2025-11-18 20:31:56,924 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:31:56,926 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 20:35:29,962 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:35:29,967 - planarity - INFO - Analyzing planarity for 4182 pixels
+2025-11-18 20:40:50,238 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:40:50,240 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 20:42:34,335 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:42:34,336 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 20:44:23,865 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:44:23,866 - planarity - INFO - Analyzing planarity for 906 pixels
+2025-11-18 20:46:17,682 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:46:17,684 - planarity - INFO - Analyzing planarity for 7802 pixels
+2025-11-18 20:56:17,833 - planarity - INFO - Planarity analysis complete
+2025-11-18 20:56:17,835 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 21:00:00,165 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:00:00,166 - planarity - INFO - Analyzing planarity for 4491 pixels
+2025-11-18 21:05:50,454 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:05:50,456 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 21:09:19,869 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:09:19,888 - planarity - INFO - Analyzing planarity for 1718 pixels
+2025-11-18 21:09:33,535 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:09:33,536 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 21:11:50,218 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:11:50,232 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 21:13:09,674 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:13:09,676 - planarity - INFO - Analyzing planarity for 1107 pixels
+2025-11-18 21:13:41,062 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:13:41,064 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 21:14:49,651 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:14:49,652 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 21:15:19,209 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:15:19,211 - planarity - INFO - Analyzing planarity for 808 pixels
+2025-11-18 21:16:53,114 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:16:53,116 - planarity - INFO - Analyzing planarity for 548 pixels
+2025-11-18 21:18:12,782 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:18:12,784 - planarity - INFO - Analyzing planarity for 1869 pixels
+2025-11-18 21:18:46,829 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:18:46,835 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 21:22:17,408 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:22:17,411 - planarity - INFO - Analyzing planarity for 2363 pixels
+2025-11-18 21:23:46,022 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:23:46,028 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 21:24:42,406 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:24:42,413 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 21:27:16,294 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:27:16,301 - planarity - INFO - Analyzing planarity for 485 pixels
+2025-11-18 21:28:19,914 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:28:19,928 - planarity - INFO - Analyzing planarity for 2313 pixels
+2025-11-18 21:29:23,942 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:29:23,943 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 21:33:13,398 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:33:13,400 - planarity - INFO - Analyzing planarity for 3341 pixels
+2025-11-18 21:35:55,444 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:35:55,445 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 21:39:53,755 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:39:53,757 - planarity - INFO - Analyzing planarity for 4071 pixels
+2025-11-18 21:44:42,801 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:44:42,819 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 21:48:25,142 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:48:25,156 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 21:48:47,354 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:48:47,358 - planarity - INFO - Analyzing planarity for 1550 pixels
+2025-11-18 21:52:10,949 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:52:10,950 - planarity - INFO - Analyzing planarity for 4915 pixels
+2025-11-18 21:58:57,164 - planarity - INFO - Planarity analysis complete
+2025-11-18 21:58:57,166 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 22:02:03,263 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:02:03,265 - planarity - INFO - Analyzing planarity for 9012 pixels
+2025-11-18 22:15:44,986 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:15:44,990 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 22:18:56,637 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:18:56,645 - planarity - INFO - Analyzing planarity for 3848 pixels
+2025-11-18 22:22:06,381 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:22:06,383 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 22:25:43,135 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:25:43,137 - planarity - INFO - Analyzing planarity for 5311 pixels
+2025-11-18 22:31:30,462 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:31:30,464 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 22:33:30,803 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:33:30,805 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 22:33:43,698 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:33:43,700 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 22:34:59,115 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:34:59,116 - planarity - INFO - Analyzing planarity for 1192 pixels
+2025-11-18 22:37:01,343 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:37:01,344 - planarity - INFO - Analyzing planarity for 147 pixels
+2025-11-18 22:37:16,679 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:37:16,680 - planarity - INFO - Analyzing planarity for 7958 pixels
+2025-11-18 22:49:06,611 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:49:06,612 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 22:49:06,612 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:06,613 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:06,613 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:08,553 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 22:49:08,553 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:10,284 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 22:49:10,284 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:10,556 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:10,556 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:10,818 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:10,818 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:10,820 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:10,820 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,127 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 22:49:12,127 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,510 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:12,510 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,512 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,512 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,513 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,513 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,514 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,514 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,516 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,516 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,517 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,517 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,564 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:12,564 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,565 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:12,565 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,636 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:12,636 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:12,881 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:12,881 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:13,314 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:13,314 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:13,340 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:13,340 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:14,244 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:14,244 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:15,779 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 22:49:15,780 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:16,111 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:16,111 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:16,660 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:16,660 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:16,676 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:16,676 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:16,678 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:16,678 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:17,743 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 22:49:17,743 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 22:49:17,743 - constraints - INFO - Applying constraint filters
+2025-11-18 22:49:20,472 - constraints - INFO - Constraint filtering complete: 24 -> 19 candidates
+2025-11-18 22:49:20,486 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 22:49:20,486 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 22:49:21,345 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 22:49:22,511 - planarity - INFO - Planarity analysis complete
+2025-11-18 22:49:22,511 - __main__ - INFO - Step 4: Finding label candidates
+2025-11-18 22:49:22,511 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:22,513 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:22,513 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:23,893 - candidate_selector - INFO - Found 4 valid candidates
+2025-11-18 22:49:23,893 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:23,896 - __main__ - INFO - Completed processing 0002 in 11334.04s
+2025-11-18 22:49:23,896 - __main__ - INFO - Found 26 fruits with 19 valid candidates
+2025-11-18 22:49:23,896 - __main__ - INFO - Exporting results...
+2025-11-18 22:49:23,896 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 22:49:23,914 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 22:49:23,914 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 22:49:23,917 - __main__ - INFO - CSV export complete: output/results.csv (19 candidate rows)
+2025-11-18 22:49:23,917 - visualize - INFO - Creating summary statistics plot
+2025-11-18 22:49:24,097 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 22:49:24,144 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 22:49:24,145 - __main__ - INFO - Pipeline execution complete!
+2025-11-18 22:49:25,087 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 22:49:25,087 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:25,267 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:25,267 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:25,468 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:25,468 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:25,469 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:25,469 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,402 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 22:49:26,402 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,699 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:26,699 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,700 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,700 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,701 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,701 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,702 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,702 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,702 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,703 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,703 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,703 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,736 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:26,737 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,738 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:26,738 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,792 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:26,793 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:26,953 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:26,953 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:27,133 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:27,133 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:27,145 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:27,145 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:27,546 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:27,546 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:28,701 - candidate_selector - INFO - Found 3 valid candidates
+2025-11-18 22:49:28,701 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:28,899 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:28,899 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:29,329 - candidate_selector - INFO - Found 1 valid candidates
+2025-11-18 22:49:29,329 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:29,341 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:29,341 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:29,342 - candidate_selector - INFO - Found 0 valid candidates
+2025-11-18 22:49:29,342 - candidate_selector - INFO - Finding label placement candidates
+2025-11-18 22:49:30,115 - candidate_selector - INFO - Found 2 valid candidates
+2025-11-18 22:49:30,115 - __main__ - INFO - Step 5: Applying constraints
+2025-11-18 22:49:30,115 - constraints - INFO - Applying constraint filters
+2025-11-18 22:49:30,701 - constraints - INFO - Constraint filtering complete: 24 -> 17 candidates
+2025-11-18 22:49:30,714 - __main__ - INFO - Step 6: Creating visualizations
+2025-11-18 22:49:30,714 - visualize - INFO - Creating comprehensive visualization for 0002
+2025-11-18 22:49:31,353 - visualize - INFO - Saved comprehensive visualization to output/visualizations/0002_analysis.png
+2025-11-18 22:49:33,394 - __main__ - INFO - Completed processing 0002 in 11142.36s
+2025-11-18 22:49:33,394 - __main__ - INFO - Found 26 fruits with 17 valid candidates
+2025-11-18 22:49:33,394 - __main__ - INFO - Exporting results...
+2025-11-18 22:49:33,394 - __main__ - INFO - Exporting results to JSON: output/results.json
+2025-11-18 22:49:33,395 - __main__ - INFO - JSON export complete: output/results.json
+2025-11-18 22:49:33,395 - __main__ - INFO - Exporting results to CSV: output/results.csv
+2025-11-18 22:49:33,397 - __main__ - INFO - CSV export complete: output/results.csv (17 candidate rows)
+2025-11-18 22:49:33,397 - visualize - INFO - Creating summary statistics plot
+2025-11-18 22:49:33,566 - visualize - INFO - Saved summary statistics to output/visualizations/summary_statistics.png
+2025-11-18 22:49:33,610 - visualize - INFO - Saved visualization legend to output/visualizations/legend.png
+2025-11-18 22:49:33,610 - __main__ - INFO - Pipeline execution complete!
