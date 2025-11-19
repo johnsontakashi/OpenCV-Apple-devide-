@@ -1,0 +1,118 @@
+# Real-time Configuration for Fruit Label Placement Analysis
+# Optimized for <1 second processing time
+
+# Image Processing
+image:
+  # Reduced resolution for speed
+  max_width: 640
+  max_height: 480
+  gaussian_blur_kernel: 3  # Reduced from 5
+  bilateral_filter:
+    d: 5  # Reduced from 9
+    sigma_color: 50  # Reduced from 75
+    sigma_space: 50  # Reduced from 75
+
+# Camera Parameters (scaled for reduced resolution)
+camera:
+  fx: 320.0  # Scaled down
+  fy: 320.0  # Scaled down  
+  cx: 320.0  # Scaled down
+  cy: 240.0  # Scaled down
+  depth_scale: 0.001
+
+# Fast Segmentation Parameters
+segmentation:
+  # HSV color ranges for red/orange fruits
+  color_ranges:
+    red_lower: [0, 50, 50]
+    red_upper: [10, 255, 255]
+    orange_lower: [5, 50, 50]
+    orange_upper: [25, 255, 255]
+  
+  # Morphological operations - reduced for speed
+  erosion_kernel: 3  # Reduced from 5
+  dilation_kernel: 3  # Reduced from 5
+  
+  # Minimum fruit area - increased to filter small detections
+  min_fruit_area: 500  # Increased from 300
+  
+  # Distance transform and watershed - simplified
+  min_distance: 15  # Reduced from 20
+  
+# Fast Point Cloud Processing
+pointcloud:
+  # Sparse sampling for speed
+  downsample_factor: 4  # Process every 4th pixel
+  max_points_per_fruit: 1000  # Limit point cloud size
+  
+# Simplified Planarity Analysis
+planarity:
+  # Grid-based sampling instead of per-pixel
+  grid_size: 10  # Sample every 10 pixels
+  min_points_for_plane: 20  # Reduced from 50
+  
+  # Simplified PCA analysis
+  eigenvalue_threshold: 0.1  # Less strict
+  max_curvature: 0.3  # More permissive
+  
+# Fast Candidate Selection
+candidate_selection:
+  # Reduced search area
+  search_radius: 15  # Reduced from 25
+  max_candidates_per_fruit: 3  # Reduced from 5
+  
+  # Simplified scoring weights
+  scoring_weights:
+    planarity: 0.4  # Reduced importance
+    depth_validity: 0.3
+    color_uniformity: 0.2  # Reduced importance
+    edge_distance: 0.1
+  
+# Constraint Filtering - Relaxed for speed
+constraints:
+  # Tray detection - simplified RANSAC
+  tray:
+    ransac_threshold: 0.02  # More permissive
+    min_inliers: 50  # Reduced from 100
+    max_iterations: 100  # Reduced from 1000
+  
+  # Stem detection - simplified
+  stem:
+    top_region_ratio: 0.2  # Reduced from 0.3
+    green_threshold: 30  # Less strict
+  
+  # Contact detection - simplified  
+  contact:
+    bottom_region_ratio: 0.15  # Reduced from 0.2
+    depth_diff_threshold: 0.02  # More permissive
+
+# Visualization - Minimal for real-time
+visualization:
+  # Disable expensive visualizations
+  enable_detailed_plots: false
+  enable_3d_plots: false
+  
+  # Only essential outputs
+  candidate_overlay: true
+  summary_stats: false
+  
+  # Image quality - reduced for speed
+  dpi: 72  # Reduced from 150
+  figure_size: [8, 6]  # Reduced from [12, 9]
+
+# Export Settings - Minimal
+export:
+  # Only essential data
+  save_detailed_analysis: false
+  save_intermediate_results: false
+  
+  # Formats
+  json_output: true
+  csv_output: true
+  image_output: true
+
+# Performance Targets
+performance:
+  target_processing_time: 1.0  # seconds
+  max_fruits_per_image: 15  # Limit for real-time
+  timeout: 2.0  # Hard timeout

@@ -1,0 +1,236 @@
+# Real-time Inference Engine Configuration
+# Optimized for various hardware configurations and performance targets
+
+# Hardware Detection and Auto-Configuration
+auto_detect: true
+fallback_config: "cpu_optimized"
+
+# Performance Profiles
+profiles:
+  # Ultra-high performance for GPU workstations
+  gpu_ultra:
+    detector_type: "yolov8"
+    device: "cuda"
+    img_size: 320
+    batch_size: 4
+    max_queue_size: 20
+    warning_threshold: 0.6
+    num_workers: 1
+    target_fps: 120
+    memory_limit_mb: 2048
+    
+  # Balanced performance for mid-range hardware  
+  gpu_balanced:
+    detector_type: "yolov8"
+    device: "cuda"
+    img_size: 416
+    batch_size: 2
+    max_queue_size: 30
+    warning_threshold: 0.7
+    num_workers: 2
+    target_fps: 60
+    memory_limit_mb: 1536
+    
+  # ONNX optimized for deployment
+  onnx_optimized:
+    detector_type: "onnx"
+    model_path: "models/fruit_detector_optimized.onnx"
+    providers: ["TensorrtExecutionProvider", "CUDAExecutionProvider", "CPUExecutionProvider"]
+    img_size: 416
+    max_queue_size: 25
+    warning_threshold: 0.75
+    num_workers: 2
+    target_fps: 45
+    memory_limit_mb: 1024
+    
+  # CPU fallback for systems without GPU
+  cpu_optimized:
+    detector_type: "yolov8"
+    device: "cpu"
+    img_size: 320
+    batch_size: 1
+    max_queue_size: 10
+    warning_threshold: 0.8
+    num_workers: 3
+    target_fps: 15
+    memory_limit_mb: 512
+    
+  # Jetson/Edge device configuration
+  edge_device:
+    detector_type: "onnx"
+    model_path: "models/fruit_detector_nano.onnx"
+    providers: ["TensorrtExecutionProvider"]
+    img_size: 320
+    batch_size: 1
+    max_queue_size: 15
+    warning_threshold: 0.7
+    num_workers: 1
+    target_fps: 30
+    memory_limit_mb: 256
+
+# Model Configurations
+models:
+  yolov8_nano:
+    path: "models/yolov8n.pt"
+    input_size: [320, 320]
+    confidence_threshold: 0.5
+    nms_threshold: 0.4
+    class_names: ["apple", "orange", "tomato", "pear"]
+    
+  yolov8_small:
+    path: "models/yolov8s.pt" 
+    input_size: [416, 416]
+    confidence_threshold: 0.6
+    nms_threshold: 0.4
+    class_names: ["apple", "orange", "tomato", "pear"]
+    
+  onnx_optimized:
+    path: "models/fruit_detector.onnx"
+    input_size: [416, 416]
+    confidence_threshold: 0.55
+    nms_threshold: 0.4
+    providers_priority: ["TensorrtExecutionProvider", "CUDAExecutionProvider"]
+
+# Camera Configurations
+camera:
+  # Standard RGB-D camera
+  default:
+    fx: 640.0
+    fy: 640.0
+    cx: 320.0
+    cy: 240.0
+    depth_scale: 0.001
+    
+  # High-resolution industrial camera
+  industrial:
+    fx: 1280.0
+    fy: 1280.0 
+    cx: 640.0
+    cy: 480.0
+    depth_scale: 0.001
+    
+  # Mobile/webcam setup
+  mobile:
+    fx: 480.0
+    fy: 480.0
+    cx: 240.0
+    cy: 180.0
+    depth_scale: 0.001
+
+# Label Placement Parameters
+placement:
+  # Fast placement computation
+  fast_mode:
+    use_depth: true
+    planarity_threshold: 0.3
+    min_placement_size: 15  # minimum diameter in pixels
+    max_placement_size: 50
+    edge_margin: 10  # pixels from fruit edge
+    
+  # Accurate placement computation  
+  accurate_mode:
+    use_depth: true
+    planarity_threshold: 0.5
+    min_placement_size: 20
+    max_placement_size: 60
+    edge_margin: 15
+    surface_smoothing: true
+    
+  # Constraints
+  constraints:
+    avoid_stem: true
+    avoid_contact_areas: true
+    prefer_curved_surfaces: false
+    min_confidence: 0.4
+
+# Performance Monitoring and Safeguards
+monitoring:
+  # Performance thresholds
+  performance_targets:
+    min_fps: 10
+    max_processing_time: 0.1  # seconds
+    max_memory_usage: 80  # percent
+    max_gpu_utilization: 90  # percent
+    
+  # Load balancing
+  load_balancing:
+    enable_frame_dropping: true
+    adaptive_quality: true
+    queue_size_scaling: true
+    worker_scaling: false  # Not implemented yet
+    
+  # Monitoring intervals
+  metrics_interval: 2.0  # seconds
+  log_interval: 10.0  # seconds
+  
+  # Alert thresholds
+  alerts:
+    high_drop_rate: 0.1  # 10% frame drops
+    high_latency: 0.2  # 200ms processing time
+    memory_warning: 0.8  # 80% memory usage
+
+# System Integration
+integration:
+  # Web UI integration
+  web_ui:
+    enable_live_view: true
+    max_concurrent_streams: 2
+    result_buffer_size: 50
+    
+  # File I/O
+  output:
+    save_results: true
+    save_visualizations: true
+    output_format: ["json", "csv"]
+    
+  # Logging
+  logging:
+    level: "INFO"
+    file: "logs/inference_engine.log"
+    max_size_mb: 100
+    backup_count: 5
+
+# Safety and Reliability
+safety:
+  # Error handling
+  error_handling:
+    max_consecutive_failures: 5
+    failure_cooldown: 2.0  # seconds
+    auto_restart: true
+    
+  # Resource limits
+  resource_limits:
+    max_cpu_percent: 90
+    max_memory_mb: 4096
+    max_gpu_memory_mb: 2048
+    
+  # Graceful degradation
+  degradation:
+    reduce_quality_on_overload: true
+    disable_features_on_error: true
+    emergency_cpu_mode: true
+
+# Development and Debug
+debug:
+  enable_profiling: false
+  save_failed_frames: false
+  verbose_logging: false
+  benchmark_mode: false
+  
+# Hardware-specific optimizations
+hardware_optimizations:
+  # NVIDIA GPU optimizations
+  nvidia:
+    use_tensorrt: true
+    mixed_precision: true
+    stream_optimization: true
+    
+  # Intel optimizations
+  intel:
+    use_openvino: false
+    mkl_optimization: true
+    
+  # ARM/Mobile optimizations
+  arm:
+    use_neon: true
+    quantization: "int8"
